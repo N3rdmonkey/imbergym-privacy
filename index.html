@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ImberGym</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <!-- Ohne Skript: Deutsch. Mit Skript: Sprache des Browsers. -->
+  <noscript><meta http-equiv="refresh" content="0; url=de/"></noscript>
+  <script>
+    if (!(navigator.language || 'de').toLowerCase().startsWith('de')) {
+      location.replace('en/');
+    } else {
+      location.replace('de/');
+    }
+  </script>
+</head>
+<body style="background:#2A2825;color:#EDE8E1;font-family:sans-serif">
+  <p><a href="de/" style="color:#FF7A1A">Deutsch</a> · <a href="en/" style="color:#FF7A1A">English</a></p>
+</body>
+</html>
