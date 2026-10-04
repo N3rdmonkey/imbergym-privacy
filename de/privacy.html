@@ -46,6 +46,7 @@
     <li><strong>Ernährung</strong> (abschaltbar): Lebensmittel, Tagebucheinträge, eigene Rezepte und Rezeptfotos, Kalorien- und Makroziele.</li>
     <li><strong>Supplements:</strong> deine eigenen Präparate, Einnahmen und Erinnerungszeiten.</li>
     <li><strong>Standort (GPS) und Luftdruck:</strong> nur während einer von dir gestarteten Outdoor-Aufzeichnung – für Strecke, Tempo und Höhenmeter. Gespeichert werden die Wegpunkte der Aufzeichnung.</li>
+    <li><strong>Herzfrequenz aus Health Connect:</strong> nur wenn du „Puls von der Uhr laden“ nutzt und es erlaubst. ImberGym liest ausschließlich die Herzfrequenz für den Zeitraum eines Trainings (z. B. von deiner Uhr), speichert sie lokal beim Training und zeigt Durchschnitt, Maximum und Verlauf. Es werden keine Daten in Health Connect geschrieben und nichts weitergegeben. Die Erlaubnis kannst du jederzeit in Health Connect entziehen.</li>
   </ul>
   <p><strong>Gesundheitsdaten:</strong> Körperwerte, Trainings- und Ernährungsdaten können Gesundheitsdaten im Sinne von Art. 9 DSGVO sein. Sie werden ausschließlich auf deinem Gerät verarbeitet, für dich selbst, und nicht an den Anbieter oder Dritte übermittelt. Die Verarbeitung erfolgt, weil du diese Funktionen aktiv nutzt (Art. 6 Abs. 1 lit. a und Art. 9 Abs. 2 lit. a DSGVO); du kannst sie jederzeit beenden, indem du die Daten löschst oder die App deinstallierst.</p>
 
@@ -58,8 +59,9 @@
     <tr><td>Kamera</td><td>Barcode scannen und Fortschrittsfotos aufnehmen.</td></tr>
     <tr><td>Fotos auswählen</td><td>Vorhandenes Bild als Fortschritts- oder Rezeptfoto übernehmen (Android-Fotoauswahl, kein Zugriff auf die ganze Galerie).</td></tr>
     <tr><td>Dateiauswahl</td><td>Nur wenn du eine Sicherung wiederherstellst oder eine CSV-Datei importierst: Android lässt dich genau eine Datei wählen; die App liest nur diese.</td></tr>
+    <tr><td>Health Connect: Herzfrequenz lesen</td><td>Puls deiner Uhr zu einem Training anzeigen (Durchschnitt, Maximum, Verlauf) – nur nach deiner Zustimmung.</td></tr>
     <tr><td>Kalender (lesen/schreiben)</td><td>Nur wenn du „Trainings im Kalender speichern“ einschaltest: abgeschlossene Trainings als Termin in den von dir gewählten Kalender eintragen, ändern und löschen.</td></tr>
-    <tr><td>Internet</td><td>Ausschließlich für Barcode-Abfragen bei Open Food Facts.</td></tr>
+    <tr><td>Internet</td><td>Für Barcode-Abfragen bei Open Food Facts; den Ortsnamen einer Tour fragt der Android-Geocoder ab (siehe § 05).</td></tr>
     <tr><td>Nach Neustart starten</td><td>Supplement-Erinnerungen nach einem Neustart des Geräts wieder einplanen.</td></tr>
     <tr><td>Display/Prozessor aktiv halten, Vibration</td><td>Display während des Trainings an, Pausenende melden.</td></tr>
   </table>
@@ -68,6 +70,7 @@
   <h2><span class="no">§ 05</span>Datenweitergabe und Dienste Dritter</h2>
   <ul>
     <li><strong>Open Food Facts:</strong> Wenn du einen Barcode scannst, der noch nicht auf deinem Gerät gespeichert ist, sendet die App <em>nur die Barcode-Nummer</em> an die öffentliche Datenbank Open Food Facts (Open Food Facts, Frankreich, <a href="https://world.openfoodfacts.org/privacy">Datenschutz von Open Food Facts</a>). Dabei wird technisch bedingt deine IP-Adresse übermittelt. Es werden keine weiteren Daten gesendet. Die Produktdaten stehen unter der Open Database License (ODbL).</li>
+    <li><strong>Ortsname einer Tour:</strong> Nach einer GPS-Aufzeichnung ermittelt die App über den Geocoder des Android-Systems (Google-Dienste) den Ortsnamen des Startpunkts, z. B. „Pram, Oberösterreich“. Dafür wird <em>nur die Koordinate des Startpunkts</em> an Google übermittelt (<a href="https://policies.google.com/privacy">Datenschutz von Google</a>). Der Name wird lokal gespeichert und kann jederzeit geändert oder gelöscht werden.</li>
     <li><strong>Gerätekalender:</strong> Nur nach deiner Zustimmung. Synchronisiert dein Kalender mit einem Konto (z. B. Google Kalender), gelten dafür die Bestimmungen des jeweiligen Anbieters.</li>
     <li><strong>Teilen und Sichern:</strong> Bilder (z. B. Trackshow, Rückblick, Fortschrittsfotos und Vorher/Nachher-Vergleich) und GPX-Dateien sowie Sicherungsdateien (ZIP) und CSV-Exporte verlassen dein Gerät nur, wenn du sie selbst über das Android-Teilen-Menü an eine App oder einen Speicherort deiner Wahl sendest. Eine Sicherung enthält deine App-Daten und – nur wenn du es einschaltest – deine Fortschrittsfotos; bewahre sie entsprechend sicher auf.</li>
     <li><strong>Käufe:</strong> Premium-Käufe und Abos werden über Google Play abgewickelt. Der Anbieter erhält keine Zahlungsdaten; es gelten die Bestimmungen von Google.</li>

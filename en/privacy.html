@@ -46,6 +46,7 @@
     <li><strong>Nutrition</strong> (can be switched off): foods, diary entries, your own recipes and recipe photos, calorie and macro goals.</li>
     <li><strong>Supplements:</strong> your own products, intakes and reminder times.</li>
     <li><strong>Location (GPS) and air pressure:</strong> only during an outdoor recording you started – for distance, pace and elevation. The waypoints of the recording are stored.</li>
+    <li><strong>Heart rate from Health Connect:</strong> only if you use “Load heart rate from watch” and allow it. ImberGym reads only heart rate for the time of a workout (e.g. from your watch), stores it locally with the workout and shows average, maximum and a curve. Nothing is written to Health Connect and nothing is shared. You can revoke the permission in Health Connect at any time.</li>
   </ul>
   <p><strong>Health data:</strong> body values, training and nutrition data may be health data within the meaning of Art. 9 GDPR. They are processed only on your device, for yourself, and are not transmitted to the provider or third parties. Processing takes place because you actively use these features (Art. 6(1)(a) and Art. 9(2)(a) GDPR); you can end it at any time by deleting the data or uninstalling the app.</p>
 
@@ -58,8 +59,9 @@
     <tr><td>Camera</td><td>Scanning barcodes and taking progress photos.</td></tr>
     <tr><td>Select photos</td><td>Using an existing image as progress or recipe photo (Android photo picker, no access to the whole gallery).</td></tr>
     <tr><td>File picker</td><td>Only when you restore a backup or import a CSV file: Android lets you choose exactly one file; the app reads only that file.</td></tr>
+    <tr><td>Health Connect: read heart rate</td><td>Show your watch’s heart rate for a workout (average, maximum, curve) – only with your consent.</td></tr>
     <tr><td>Calendar (read/write)</td><td>Only if you turn on “Save workouts in calendar”: add, update and delete finished workouts as events in the calendar you choose.</td></tr>
-    <tr><td>Internet</td><td>Exclusively for barcode lookups at Open Food Facts.</td></tr>
+    <tr><td>Internet</td><td>For barcode lookups at Open Food Facts; the place name of a tour is looked up by the Android geocoder (see § 05).</td></tr>
     <tr><td>Run at startup</td><td>Re-schedule supplement reminders after the device restarts.</td></tr>
     <tr><td>Keep screen/processor awake, vibration</td><td>Screen stays on during workouts, rest end alert.</td></tr>
   </table>
@@ -68,6 +70,7 @@
   <h2><span class="no">§ 05</span>Data sharing and third-party services</h2>
   <ul>
     <li><strong>Open Food Facts:</strong> when you scan a barcode that is not yet stored on your device, the app sends <em>only the barcode number</em> to the public Open Food Facts database (Open Food Facts, France, <a href="https://world.openfoodfacts.org/privacy">Open Food Facts privacy</a>). For technical reasons your IP address is transmitted. No other data is sent. Product data is licensed under the Open Database License (ODbL).</li>
+    <li><strong>Place name of a tour:</strong> after a GPS recording the app uses the Android system geocoder (Google services) to look up the place name of the starting point, e.g. “Pram, Upper Austria”. Only <em>the coordinate of the starting point</em> is sent to Google (<a href="https://policies.google.com/privacy">Google privacy policy</a>). The name is stored locally and can be changed or removed at any time.</li>
     <li><strong>Device calendar:</strong> only with your consent. If your calendar syncs with an account (e.g. Google Calendar), that provider’s terms apply.</li>
     <li><strong>Sharing and saving:</strong> images (e.g. Trackshow, reviews, progress photos and before/after comparisons) GPX files as well as backup files (ZIP) and CSV exports leave your device only when you send them yourself via the Android share menu to an app or storage location of your choice. A backup contains your app data and – only if you switch it on – your progress photos; keep it somewhere safe.</li>
     <li><strong>Purchases:</strong> Premium purchases and subscriptions are handled by Google Play. The provider receives no payment data; Google’s terms apply.</li>
