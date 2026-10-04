@@ -186,3 +186,22 @@ footer ul { list-style: none; padding: 0; margin: 0; }
   color: var(--text);
   letter-spacing: 0.02em;
 }
+
+/* Bilder aus der App */
+.hero-grid { display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center; }
+.hero-phone { width: 300px; height: auto; }
+.shots {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+  scroll-snap-type: x mandatory;
+}
+.shots figure { margin: 0; flex: 0 0 auto; width: 230px; scroll-snap-align: start; text-align: center; }
+.shots img { width: 100%; height: auto; display: block; }
+.shots figcaption { color: var(--text-2); font-size: 15px; margin-top: 6px; }
+@media (max-width: 860px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-phone { width: 240px; justify-self: center; }
+}
+.beta-note { color: var(--text-2); font-size: 15px; margin-top: 14px; }
