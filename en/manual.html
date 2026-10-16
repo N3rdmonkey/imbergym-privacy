@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Manual – ImberGym</title>
-  <meta name="description" content="User manual for the ImberGym app: workouts, plans, stats, nutrition, outdoor, voice control and all settings step by step.">
+  <meta name="description" content="User manual for the ImberGym app: workouts, plans, stats, nutrition, outdoor, watch and all settings step by step.">
   <link rel="icon" href="../assets/icon.png" type="image/png">
   <link rel="apple-touch-icon" href="../assets/icon.png">
   <link rel="stylesheet" href="../assets/style.css">
@@ -39,7 +39,7 @@
     <a href="#rest"><span class="no">07</span>Rest &amp; lock screen</a>
     <a href="#interval"><span class="no">08</span>Interval training</a>
     <a href="#coach"><span class="no">09</span>Recommendation &amp; plateau coach</a>
-    <a href="#voice"><span class="no">10</span>Voice control</a>
+    <a href="#watch"><span class="no">10</span>Watch (Wear OS)</a>
     <a href="#outdoor"><span class="no">11</span>Outdoor &amp; Trackshow</a>
     <a href="#history"><span class="no">12</span>History &amp; stats</a>
     <a href="#nutrition"><span class="no">13</span>Nutrition</a>
@@ -171,7 +171,7 @@
       <li><strong>New record!</strong> appears right after ticking a set when you beat a previous best.</li>
     </ul>
     <h3>Menu ⋮</h3>
-    <p>Add exercise, choose gym <span class="tag">PREMIUM</span>, show card <span class="tag">PREMIUM</span>, rest timer on/off, voice commands, remove exercise, discard workout.</p>
+    <p>Add exercise, choose gym <span class="tag">PREMIUM</span>, show card <span class="tag">PREMIUM</span>, rest timer on/off, remove exercise, discard workout.</p>
     <h3>Cardio and holds</h3>
     <p>Cardio exercises have no sets: time and distance (floors on a stair climber), level on machines, then “Done”. Holds (e.g. plank) record seconds.</p>
     <h3>Bodyweight and assistance</h3>
@@ -223,29 +223,36 @@
     <p>Cardio and holds never get a plateau hint. Can be turned off in the profile.</p>
   </section>
 
-  <section class="part" id="voice">
-    <h2><span class="no">10</span>Voice control <span class="tag">PREMIUM</span></h2>
-    <h3>Turning it on</h3>
-    <p>Profile → “Voice control”. Only now does Android ask for the microphone. A microphone appears at the top of the workout screen.</p>
-    <h3>Single command</h3>
-    <p>Tap the mic and say a command. The first time, the app shows the command list (“Voice commands”, any time via <kbd>⋮</kbd> or in the profile).</p>
-    <table>
-      <tr><th>Say</th><th>Effect</th></tr>
-      <tr><td>“80 kilos” / “80 kilograms”</td><td>enter weight</td></tr>
-      <tr><td>“10 reps”</td><td>enter reps</td></tr>
-      <tr><td>“80 times 10”</td><td>weight and reps</td></tr>
-      <tr><td>“done” / “set done”</td><td>complete the set (rest starts)</td></tr>
-      <tr><td>“heavier” / “lighter”</td><td>one weight step up or down</td></tr>
-      <tr><td>“one more” / “one less”</td><td>one rep more or less</td></tr>
-      <tr><td>“skip rest”</td><td>end the rest</td></tr>
-      <tr><td>“more rest” / “less rest”</td><td>30 seconds more or less</td></tr>
-      <tr><td>“next exercise” / “previous exercise”</td><td>switch exercise</td></tr>
-      <tr><td>“help”</td><td>show the command list</td></tr>
-    </table>
-    <p>Combine several in one sentence: “82.5 kilos, 8 reps, done”. German commands work as well.</p>
-    <h3>Hands-free</h3>
-    <p>Profile → Voice control → “Hands-free”. The app then listens continuously during a workout while the workout screen is open and the display is on. So that conversations at the gym don’t trigger anything, every command starts with <strong>“Gym”</strong>: “Gym, 80 kilos, 10 reps, done”. The mic at the top is orange while listening; tap to pause. Below the progress bar, “Heard: …” shows what was recognised.</p>
-    <div class="box"><p>Recognition uses your phone’s speech recognition – on the device when possible. ImberGym records and stores nothing.</p></div>
+  <!-- 10 -->
+  <section class="part" id="watch">
+    <h2><span class="no">10</span>Watch (Wear OS) <span class="tag">PREMIUM</span></h2>
+    <figure class="shot"><img src="../assets/screens/en_watch_set.png" alt="Set on the watch" width="454" height="454" loading="lazy"><figcaption>Set on the watch</figcaption></figure>
+    <p>With a Wear OS watch (e.g. Samsung Galaxy Watch 4 and newer, Google Pixel Watch, OnePlus Watch, TicWatch) you control your workout from your wrist – your phone can stay in your pocket. All data stays on the phone; the watch only displays it and sends your input.</p>
+    <h3>Install</h3>
+    <ol>
+      <li>ImberGym must be installed on your phone.</li>
+      <li>Open the Play Store on the watch and install ImberGym – or, on your phone, choose “Install on more devices” on the ImberGym page in the Play Store.</li>
+      <li>When you open it on the watch for the first time, allow notifications and heart rate.</li>
+    </ol>
+    <h3>Start a workout</h3>
+    <p>The watch lists all plans with their units, the next one in orange. Tap to start the workout on phone and watch. If a workout is already running, the watch shows the current set right away.</p>
+    <h3>Set</h3>
+    <ul>
+      <li>Exercise, “Set 2 of 3” and your values from last time.</li>
+      <li><strong>Tap a value</strong> → change it with <kbd>−</kbd>/<kbd>+</kbd> (weight in your weight step). <strong>Tap the number</strong> → type any value, e.g. 82.5.</li>
+      <li>With a crown or rotating bezel, turning changes the reps directly.</li>
+      <li>“Set done” ticks off the set – on your phone too.</li>
+    </ul>
+    <figure class="shot"><img src="../assets/screens/en_watch_interval.png" alt="Intervals on the watch" width="454" height="454" loading="lazy"><figcaption>Tabata on the watch</figcaption></figure>
+    <h3>Rest</h3>
+    <p>Countdown with a ring; <kbd>+15</kbd> adds time, <kbd>▶</kbd> skips. The watch counts on its own and vibrates when the rest is over – even when the app isn’t open or the screen is off. Meanwhile an ImberGym icon with the remaining time shows on the watch face.</p>
+    <h3>Interval training</h3>
+    <p>On an interval block’s page the watch shows type, timing and exercises with “Start intervals”. Then: work in orange, rest dark with “Up next”; a vibration at every change. <kbd>⏸</kbd> pauses, then <kbd>▶</kbd> resumes or <kbd>✕</kbd> stops. You enter the reps per round on your phone afterwards.</p>
+    <h3>Heart rate</h3>
+    <p>During the workout the watch measures your heart rate and sends it to your phone – just like a chest strap (❤ display, heart rate zones, workout details). If a chest strap is connected, it takes priority.</p>
+    <h3>Tile</h3>
+    <p>Add the “ImberGym” tile to your watch’s tiles: it shows the next unit with “Start”, or the current exercise during a workout.</p>
+    <div class="box"><p><strong>Older watches:</strong> Tizen watches (e.g. Gear S3) are not supported. Garmin, Amazfit and others can often broadcast heart rate like a chest strap (see <a href="#heart">Heart rate</a>).</p></div>
   </section>
 
   <section class="part" id="outdoor">
@@ -371,7 +378,7 @@
       <li><strong>Figure:</strong> male or female figure in animations and body map.</li>
       <li><strong>Rest signal:</strong> sound with preview, vibration, “Voice in interval training”.</li>
       <li><strong>Rest timer</strong> default for free workouts and new plans.</li>
-      <li><strong>Today’s pick</strong>, <strong>plateau coach</strong> and <strong>voice control</strong> on/off.</li>
+      <li><strong>Today’s pick</strong> and <strong>plateau coach</strong> on/off.</li>
       <li><strong>Nutrition</strong> on/off.</li>
       <li>Weight &amp; body fat, progress photos, supplements, chest strap &amp; zones, my gyms, membership cards, calendar, data &amp; backup.</li>
       <li><strong>ImberGym Premium</strong>, <strong>Rate ImberGym</strong> and <strong>About ImberGym</strong> (version, privacy, contact, sources, licences).</li>
@@ -393,7 +400,7 @@
   <section class="part" id="premium">
     <h2><span class="no">22</span>Free &amp; Premium</h2>
     <p><strong>Free:</strong> the complete workout with all exercises and animations, up to 5 own plans and 5 own exercises, history, records, stats, today’s pick, calorie tracker with barcode, 6 recipes, weight, heart rate from Health Connect, calendar, backup and import.</p>
-    <p><strong>Premium</strong> unlocks: unlimited plans and own exercises, body map and recovery, weight and body-fat charts, plateau coach, voice control, interval training, GPS recording with Trackshow and video, chest strap with zones and heart-rate based rest, gyms and membership cards, supplements, progress photos, all and own recipes, dynamic calorie goal and importing plans via QR code.</p>
+    <p><strong>Premium</strong> unlocks: unlimited plans and own exercises, body map and recovery, weight and body-fat charts, plateau coach, interval training, watch app, GPS recording with Trackshow and video, chest strap with zones and heart-rate based rest, gyms and membership cards, supplements, progress photos, all and own recipes, dynamic calorie goal and importing plans via QR code.</p>
     <p>Everything is free until your first finished workout, then for 7 more days to try. After that: monthly, yearly or a one-time lifetime purchase – Profile → “ImberGym Premium”. “Restore purchases” brings a purchase back on a new phone. Cancel subscriptions in Google Play.</p>
   </section>
 
@@ -403,7 +410,6 @@
       <li><strong>No rest signal?</strong> Allow notifications for ImberGym and check “Do not disturb”.</li>
       <li><strong>Heart rate missing for short workouts?</strong> Without a workout on the watch it only measures every few minutes – train on the watch too or use a chest strap.</li>
       <li><strong>Gym not detected?</strong> Allow location and save the gym’s location once on site.</li>
-      <li><strong>Voice command not understood?</strong> “Heard: …” shows what was recognised. For recognition without internet, download the offline language in your Android settings.</li>
     </ul>
     <p>Questions, wishes, bugs: <a href="mailto:chr.mathai@gmail.com?subject=ImberGym">chr.mathai@gmail.com</a></p>
     <p class="top-link"><a href="#top">↑ back to top</a></p>

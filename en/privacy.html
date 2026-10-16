@@ -26,7 +26,7 @@
 
 <main class="legal">
   <h1>Privacy Policy</h1>
-  <p class="meta">App “ImberGym” (Android) · Last updated: October 2026 · Version 1.4</p>
+  <p class="meta">App “ImberGym” (Android, Wear OS) · Last updated: October 2026 · Version 1.5</p>
 
   <h2><span class="no">§ 01</span>Controller</h2>
   <p>Christoph Imber<br>Schulterbergstr. 4<br>4742 Pram, Austria<br>Email: <a href="mailto:chr.mathai@gmail.com">chr.mathai@gmail.com</a></p>
@@ -52,6 +52,8 @@
     <li><strong>Weight and body fat from Health Connect:</strong> only if you turn on “Import from Health Connect” on the “Weight &amp; body fat” page. ImberGym then reads weight and body fat (e.g. from a Withings scale via Withings Health Mate) and stores them locally with their source. Nothing is written to Health Connect and nothing is shared; turn it off there or in Health Connect at any time.</li>
     <li><strong>Active calories from Health Connect:</strong> only if you turn on the “dynamic calorie goal”. ImberGym reads the active calories measured by your watch or phone for the last days, stores the daily total locally and calculates your daily goal from it. Nothing is written or shared.</li>
     <li><strong>Heart rate from a chest strap (Bluetooth):</strong> only if you pair a strap. During a workout the app connects directly to the strap and stores the heart rate locally with the workout (for display, heart rate zones and heart-rate-based rest). The name and identifier of the paired strap are stored as well.</li>
+    <li><strong>Watch app (Wear OS):</strong> only if you install ImberGym on a Wear OS watch. The watch shows your current workout (exercise, set, weight, reps, rest, intervals) and your plans, and it sends your input (e.g. “Set done”) to your phone. Everything is stored on the phone only; the watch merely keeps the last displayed state.</li>
+    <li><strong>Heart rate from the watch sensor:</strong> only with the watch app, during a workout and after you allow it on the watch. The watch measures your heart rate via the Wear OS health services (Health Services), shows it and sends it to your phone about every 5 seconds, where it is stored with the workout just like chest strap data. Nothing is measured outside a workout.</li>
     <li><strong>Gyms (workout location):</strong> name and – only if you use “Use current location” – the coordinate of your gym. If you saved gyms with a location and already granted location access, the app determines your current position once when a workout starts and compares it with your gyms <em>on the device only</em>; the position itself is neither stored nor transmitted.</li>
     <li><strong>Premium:</strong> which product was purchased and when Google Play last confirmed the purchase – stored locally to unlock Premium.</li>
   </ul>
@@ -64,7 +66,6 @@
     <tr><td>Foreground service (location, special use)</td><td>Keeps recording and rest timer running with the screen off – always with a visible notification.</td></tr>
     <tr><td>Notifications</td><td>Rest timer, running recording, supplement reminders.</td></tr>
     <tr><td>Camera</td><td>Scanning barcodes, reading membership cards and taking progress photos (with the previous photo as an overlay). No microphone, no video recording.</td></tr>
-    <tr><td>Microphone</td><td>Only if you turn on voice control: the app listens while you have tapped the microphone during a workout and “Listening” is shown, to recognise a command such as “80 kilos, 10 reps, done”. With the “Hands-free” setting it listens continuously during a workout while the workout screen is open and the display is on (orange microphone icon, tap to pause), and only reacts to sentences starting with “Gym”. Nothing is recorded or stored.</td></tr>
     <tr><td>Nearby devices (Bluetooth)</td><td>Only if you pair a chest strap: find and connect to it to read your heart rate live. Not used to determine your location.</td></tr>
     <tr><td>Select photos</td><td>Using an existing image as progress or recipe photo (Android photo picker, no access to the whole gallery).</td></tr>
     <tr><td>File picker</td><td>Only when you restore a backup or import a CSV file: Android lets you choose exactly one file; the app reads only that file.</td></tr>
@@ -76,6 +77,8 @@
     <tr><td>Internet</td><td>For barcode lookups at Open Food Facts; the place name of a tour is looked up by the Android geocoder (see § 05).</td></tr>
     <tr><td>Run at startup</td><td>Re-schedule supplement reminders after the device restarts.</td></tr>
     <tr><td>Keep screen/processor awake, vibration</td><td>Screen stays on during workouts, rest end alert.</td></tr>
+    <tr><td>Watch: body sensors / read heart rate</td><td>Watch app only: measure your heart rate during a workout – only after you allow it on the watch.</td></tr>
+    <tr><td>Watch: foreground service (special use, health), notifications, vibration</td><td>So the watch can accompany a running workout (icon on the watch face, vibration at the end of a rest and at interval changes, heart rate), even when the app is not open.</td></tr>
   </table>
   <p>You can revoke any permission in the Android settings at any time; the remaining features stay usable.</p>
 
@@ -84,9 +87,9 @@
     <li><strong>Open Food Facts:</strong> when you scan a barcode that is not yet stored on your device, the app sends <em>only the barcode number</em> to the public Open Food Facts database (Open Food Facts, France, <a href="https://world.openfoodfacts.org/privacy">Open Food Facts privacy</a>). For technical reasons your IP address is transmitted. No other data is sent. Product data is licensed under the Open Database License (ODbL).</li>
     <li><strong>Place name of a tour:</strong> after a GPS recording the app uses the Android system geocoder (Google services) to look up the place name of the starting point, e.g. “Pram, Upper Austria”. Only <em>the coordinate of the starting point</em> is sent to Google (<a href="https://policies.google.com/privacy">Google privacy policy</a>). The name is stored locally and can be changed or removed at any time.</li>
     <li><strong>Device calendar:</strong> only with your consent. If your calendar syncs with an account (e.g. Google Calendar), that provider’s terms apply.</li>
+    <li><strong>Watch ↔ phone connection:</strong> With the watch app, phone and watch exchange workout state, input and heart rate via the Wearable API of Google Play services – directly between your devices over Bluetooth or Wi-Fi, encrypted. If the watch is not nearby, Google Play services may relay the data encrypted between your devices via your Google account (<a href="https://policies.google.com/privacy">Google privacy policy</a>). The provider receives none of this data.</li>
     <li><strong>Sharing and saving:</strong> images (e.g. Trackshow, reviews, progress photos, before/after comparisons and QR codes of workout plans – they contain only the plan), GPX files as well as backup files (ZIP) and CSV exports leave your device only when you send them yourself via the Android share menu to an app or storage location of your choice. A backup contains your app data and – only if you switch it on – your progress photos; keep it somewhere safe.</li>
     <li><strong>Purchases:</strong> Premium purchases and subscriptions are handled by Google Play. The provider receives no payment data; Google’s terms apply.</li>
-    <li><strong>Voice control:</strong> only if you turn it on and tap the microphone during a workout. Recognition is done by your phone's speech recognition service – on the device when possible. If the language is not available there, the system service (Google on most Android devices) may process the audio of that single command (<a href="https://policies.google.com/privacy">Google privacy policy</a>). With “Hands-free” recognition runs continuously during the workout; text without the wake word “Gym” is discarded immediately. ImberGym only receives the recognised text, evaluates it immediately and stores neither audio nor text.</li>
     <li><strong>Android backup:</strong> if device backup is turned on, Android may store the app data (without progress photos and membership cards) in your Google backup. You control this in the Android settings.</li>
   </ul>
   <p>Beyond that, no data is transferred to third parties.</p>

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Anleitung – ImberGym</title>
-  <meta name="description" content="Bedienungsanleitung der App ImberGym: Training, Pläne, Statistik, Ernährung, Outdoor, Sprachsteuerung und alle Einstellungen Schritt für Schritt.">
+  <meta name="description" content="Bedienungsanleitung der App ImberGym: Training, Pläne, Statistik, Ernährung, Outdoor, Uhr und alle Einstellungen Schritt für Schritt.">
   <link rel="icon" href="../assets/icon.png" type="image/png">
   <link rel="apple-touch-icon" href="../assets/icon.png">
   <link rel="stylesheet" href="../assets/style.css">
@@ -39,7 +39,7 @@
     <a href="#pause"><span class="no">07</span>Pause &amp; Sperrbildschirm</a>
     <a href="#intervall"><span class="no">08</span>Intervall-Training</a>
     <a href="#coach"><span class="no">09</span>Empfehlung &amp; Plateau-Coach</a>
-    <a href="#sprache"><span class="no">10</span>Sprachsteuerung</a>
+    <a href="#uhr"><span class="no">10</span>Uhr (Wear OS)</a>
     <a href="#outdoor"><span class="no">11</span>Outdoor &amp; Trackshow</a>
     <a href="#verlauf"><span class="no">12</span>Verlauf &amp; Statistik</a>
     <a href="#ernaehrung"><span class="no">13</span>Ernährung</a>
@@ -178,7 +178,7 @@
       <li><strong>Neuer Rekord!</strong> erscheint direkt nach dem Abhaken, wenn du einen früheren Bestwert übertriffst.</li>
     </ul>
     <h3>Menü ⋮</h3>
-    <p>Übung hinzufügen, Trainingsort wählen <span class="tag">PREMIUM</span>, Karte vorzeigen <span class="tag">PREMIUM</span>, Satzpause-Timer an/aus, Sprachbefehle, Übung entfernen, Training verwerfen.</p>
+    <p>Übung hinzufügen, Trainingsort wählen <span class="tag">PREMIUM</span>, Karte vorzeigen <span class="tag">PREMIUM</span>, Satzpause-Timer an/aus, Übung entfernen, Training verwerfen.</p>
     <h3>Cardio und Halteübungen</h3>
     <p>Cardio-Übungen haben keine Sätze: Zeit und Distanz (beim Treppensteiger Stockwerke), an Geräten die Stufe, dann „Erledigt“. Halteübungen (z. B. Plank) erfassen Sekunden.</p>
     <h3>Körpergewicht und Unterstützung</h3>
@@ -234,29 +234,35 @@
   </section>
 
   <!-- 10 -->
-  <section class="part" id="sprache">
-    <h2><span class="no">10</span>Sprachsteuerung <span class="tag">PREMIUM</span></h2>
-    <h3>Einschalten</h3>
-    <p>Profil → „Sprachsteuerung“. Erst jetzt fragt Android nach dem Mikrofon. Im Training erscheint oben ein Mikrofon.</p>
-    <h3>Einzelner Befehl</h3>
-    <p>Mikro antippen, Befehl sagen. Beim ersten Mal zeigt die App die Befehlsliste („Sprachbefehle“, jederzeit über <kbd>⋮</kbd> oder im Profil).</p>
-    <table>
-      <tr><th>Sagen</th><th>Wirkung</th></tr>
-      <tr><td>„80 Kilo“ / „80 Kilogramm“</td><td>Gewicht eintragen</td></tr>
-      <tr><td>„10 Wiederholungen“</td><td>Wiederholungen eintragen</td></tr>
-      <tr><td>„80 mal 10“</td><td>Gewicht und Wiederholungen</td></tr>
-      <tr><td>„fertig“ / „Satz erledigt“</td><td>Satz abhaken (Pause startet)</td></tr>
-      <tr><td>„schwerer“ / „leichter“</td><td>einen Gewichtsschritt rauf bzw. runter</td></tr>
-      <tr><td>„eine mehr“ / „eine weniger“</td><td>eine Wiederholung mehr bzw. weniger</td></tr>
-      <tr><td>„Pause überspringen“</td><td>Pause beenden</td></tr>
-      <tr><td>„Pause länger“ / „Pause kürzer“</td><td>30 Sekunden mehr bzw. weniger</td></tr>
-      <tr><td>„nächste Übung“ / „vorherige Übung“</td><td>Übung wechseln</td></tr>
-      <tr><td>„Hilfe“</td><td>Befehlsliste zeigen</td></tr>
-    </table>
-    <p>Mehrere Angaben gehen in einem Satz: „82,5 Kilo, 8 Wiederholungen, fertig“. Englische Befehle („80 kilos, 10 reps, done“) versteht die App ebenso.</p>
-    <h3>Freihändig</h3>
-    <p>Profil → Sprachsteuerung → „Freihändig“. Dann hört die App im Training durchgehend zu, solange der Trainingsbildschirm offen und das Display an ist. Damit Gespräche im Studio nichts auslösen, beginnt jeder Befehl mit <strong>„Gym“</strong>: „Gym, 80 Kilo, 10 Wiederholungen, fertig“. Das Mikro oben ist orange, solange zugehört wird; Antippen pausiert. Unter dem Fortschritt zeigt „Gehört: …“, was erkannt wurde.</p>
-    <div class="box"><p>Erkannt wird mit der Spracherkennung deines Handys – wenn möglich direkt auf dem Gerät. ImberGym nimmt nichts auf und speichert nichts.</p></div>
+  <section class="part" id="uhr">
+    <h2><span class="no">10</span>Uhr (Wear OS) <span class="tag">PREMIUM</span></h2>
+    <figure class="shot"><img src="../assets/screens/de_watch_set.png" alt="Satz auf der Uhr" width="454" height="454" loading="lazy"><figcaption>Satz auf der Uhr</figcaption></figure>
+    <p>Mit einer Wear-OS-Uhr (z. B. Samsung Galaxy Watch 4 und neuer, Google Pixel Watch, OnePlus Watch, TicWatch) bedienst du das Training vom Handgelenk – das Handy kann in der Tasche bleiben. Alle Daten bleiben am Handy; die Uhr zeigt nur an und schickt deine Eingaben.</p>
+    <h3>Installieren</h3>
+    <ol>
+      <li>ImberGym muss am Handy installiert sein.</li>
+      <li>Auf der Uhr den Play Store öffnen und ImberGym installieren – oder am Handy im Play Store bei ImberGym „Auf weiteren Geräten installieren“ wählen.</li>
+      <li>Beim ersten Öffnen auf der Uhr Benachrichtigungen und Puls erlauben.</li>
+    </ol>
+    <h3>Training starten</h3>
+    <p>Die Uhr zeigt alle Pläne mit ihren Einheiten, die nächste ist orange. Antippen startet das Training am Handy und auf der Uhr. Läuft schon ein Training, zeigt die Uhr gleich den aktuellen Satz.</p>
+    <h3>Satz</h3>
+    <ul>
+      <li>Übung, „Satz 2 von 3“ und die Werte vom letzten Mal.</li>
+      <li><strong>Wert antippen</strong> → mit <kbd>−</kbd>/<kbd>+</kbd> ändern (Gewicht im Gewichtsschritt). <strong>Zahl antippen</strong> → beliebigen Wert eintippen, z. B. 82,5.</li>
+      <li>Mit Krone oder drehbarer Lünette ändert Drehen direkt die Wiederholungen.</li>
+      <li>„Satz erledigt“ hakt den Satz ab – am Handy genauso.</li>
+    </ul>
+    <figure class="shot"><img src="../assets/screens/de_watch_interval.png" alt="Intervall auf der Uhr" width="454" height="454" loading="lazy"><figcaption>Tabata auf der Uhr</figcaption></figure>
+    <h3>Pause</h3>
+    <p>Countdown mit Ring; <kbd>+15</kbd> verlängert, <kbd>▶</kbd> überspringt. Die Uhr zählt selbst und vibriert bei Pausenende – auch wenn die App nicht offen ist oder das Display aus ist. Am Ziffernblatt steht währenddessen ein ImberGym-Symbol mit der Restzeit.</p>
+    <h3>Intervall-Training</h3>
+    <p>Auf der Seite eines Intervall-Blocks zeigt die Uhr Art, Ablauf und Übungen mit „Intervalle starten“. Danach: Belastung orange, Pause dunkel mit „Als Nächstes“; Vibration bei jedem Wechsel. <kbd>⏸</kbd> hält an, dann <kbd>▶</kbd> weiter oder <kbd>✕</kbd> beenden. Die Wiederholungen je Runde trägst du danach am Handy ein.</p>
+    <h3>Puls</h3>
+    <p>Während des Trainings misst die Uhr den Puls und schickt ihn ans Handy – wie ein Brustgurt (Anzeige ❤, Pulszonen, Trainingsdetails). Ist ein Brustgurt verbunden, hat dieser Vorrang.</p>
+    <h3>Kachel</h3>
+    <p>Kachel „ImberGym“ zu den Kacheln der Uhr hinzufügen: Sie zeigt die nächste Einheit mit „Starten“ bzw. im Training die aktuelle Übung.</p>
+    <div class="box"><p><strong>Ältere Uhren:</strong> Tizen-Uhren (z. B. Gear S3) werden nicht unterstützt. Garmin, Amazfit und andere können den Puls oft wie ein Brustgurt senden (siehe <a href="#puls">Puls</a>).</p></div>
   </section>
 
   <!-- 11 -->
@@ -392,7 +398,7 @@
       <li><strong>Figur:</strong> männliche oder weibliche Figur in Animationen und Körperkarte.</li>
       <li><strong>Pausensignal:</strong> Ton mit Probehören, Vibration, „Ansage im Intervall-Training“.</li>
       <li><strong>Satzpause-Timer</strong> als Vorgabe für freie Trainings und neue Pläne.</li>
-      <li><strong>Tagesempfehlung</strong>, <strong>Plateau-Coach</strong> und <strong>Sprachsteuerung</strong> ein/aus.</li>
+      <li><strong>Tagesempfehlung</strong> und <strong>Plateau-Coach</strong> ein/aus.</li>
       <li><strong>Ernährung</strong> ein/aus.</li>
       <li>Gewicht &amp; Körperfett, Fortschrittsfotos, Supplements, Brustgurt &amp; Pulszonen, Meine Studios, Mitgliedskarten, Kalender, Daten &amp; Sicherung.</li>
       <li><strong>ImberGym Premium</strong>, <strong>ImberGym bewerten</strong> und <strong>Über ImberGym</strong> (Version, Datenschutz, Kontakt, Quellen, Lizenzen).</li>
@@ -416,7 +422,7 @@
   <section class="part" id="premium">
     <h2><span class="no">22</span>Gratis &amp; Premium</h2>
     <p><strong>Gratis</strong> ist das komplette Training mit allen Übungen und Animationen, bis zu 5 eigene Pläne und 5 eigene Übungen, Verlauf, Rekorde, Statistik, Tagesempfehlung, Kalorien-Tracker mit Barcode, 6 Rezepte, Gewicht, Puls aus Health Connect, Kalender, Sicherung und Import.</p>
-    <p><strong>Premium</strong> schaltet frei: unbegrenzte Pläne und eigene Übungen, Körperkarte und Erholung, Gewichts- und Körperfett-Diagramme, Plateau-Coach, Sprachsteuerung, Intervall-Training, GPS-Aufzeichnung mit Trackshow und Video, Brustgurt mit Pulszonen und pulsbasierter Pause, Studios und Mitgliedskarten, Supplements, Fortschrittsfotos, alle und eigene Rezepte, dynamisches Kalorienziel und Pläne per QR-Code übernehmen.</p>
+    <p><strong>Premium</strong> schaltet frei: unbegrenzte Pläne und eigene Übungen, Körperkarte und Erholung, Gewichts- und Körperfett-Diagramme, Plateau-Coach, Intervall-Training, Uhren-App, GPS-Aufzeichnung mit Trackshow und Video, Brustgurt mit Pulszonen und pulsbasierter Pause, Studios und Mitgliedskarten, Supplements, Fortschrittsfotos, alle und eigene Rezepte, dynamisches Kalorienziel und Pläne per QR-Code übernehmen.</p>
     <p>Bis zum ersten abgeschlossenen Training ist alles frei, danach 7 Tage zum Testen. Danach: Monat, Jahr oder einmalig Lifetime – Profil → „ImberGym Premium“. „Käufe wiederherstellen“ holt einen Kauf auf einem neuen Handy zurück. Abos kündigst du in Google Play.</p>
   </section>
 
@@ -427,7 +433,6 @@
       <li><strong>Pausensignal kommt nicht?</strong> Benachrichtigungen für ImberGym erlauben und „Nicht stören“ prüfen.</li>
       <li><strong>Puls fehlt bei kurzen Trainings?</strong> Ohne Training auf der Uhr misst sie nur alle paar Minuten – auf der Uhr mittrainieren oder einen Brustgurt nutzen.</li>
       <li><strong>Studio wird nicht erkannt?</strong> Standort erlauben und den Standort des Studios einmal vor Ort übernehmen.</li>
-      <li><strong>Sprachbefehl nicht verstanden?</strong> Unter „Gehört: …“ siehst du, was erkannt wurde. Für die Erkennung ohne Internet in den Android-Einstellungen die Offline-Sprache Deutsch laden.</li>
     </ul>
     <p>Fragen, Wünsche, Fehler: <a href="mailto:chr.mathai@gmail.com?subject=ImberGym">chr.mathai@gmail.com</a></p>
     <p class="top-link"><a href="#oben">↑ nach oben</a></p>
