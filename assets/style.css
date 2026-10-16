@@ -205,3 +205,51 @@ footer ul { list-style: none; padding: 0; margin: 0; }
   .hero-phone { width: 240px; justify-self: center; }
 }
 .beta-note { color: var(--text-2); font-size: 15px; margin-top: 14px; }
+
+/* Bedienungsanleitung */
+.manual { max-width: 860px; }
+.manual h3 { font-size: 22px; margin: 26px 0 6px; }
+.manual .toc {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 4px 20px;
+  padding: 14px 18px;
+  margin: 18px 0 8px;
+  background: var(--surface-dark);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 15px;
+}
+.manual .toc a { color: var(--text); text-decoration: none; }
+.manual .toc a:hover { color: var(--signal); }
+.manual .toc .no { color: var(--signal); font-family: "Big Shoulders"; font-weight: 800; margin-right: 6px; }
+.manual figure.shot { float: right; width: 210px; margin: 6px 0 14px 24px; }
+.manual figure.shot img { width: 100%; height: auto; display: block; }
+.manual figure.shot figcaption { color: var(--text-2); font-size: 13px; text-align: center; }
+.manual section.part { clear: both; padding: 0; scroll-margin-top: 80px; }
+.manual .tag {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
+  padding: 1px 8px;
+  border-radius: 4px;
+  background: var(--signal);
+  color: var(--on-signal);
+  font-family: "Chivo";
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+.manual .tag.free { background: transparent; color: var(--text-2); border: 1px solid var(--border); }
+.manual kbd {
+  font-family: "Chivo";
+  font-size: 14px;
+  padding: 0 6px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--surface-dark);
+}
+.manual .top-link { font-size: 14px; }
+@media (max-width: 720px) {
+  .manual figure.shot { float: none; width: 220px; margin: 10px auto; }
+}

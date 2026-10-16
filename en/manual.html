@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manual – ImberGym</title>
+  <meta name="description" content="User manual for the ImberGym app: workouts, plans, stats, nutrition, outdoor, voice control and all settings step by step.">
+  <link rel="icon" href="../assets/icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/icon.png">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="alternate" hreflang="de" href="../de/anleitung.html">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="./" aria-label="ImberGym">
+      <span class="mark">
+        <svg viewBox="0 0 14 26" width="14" height="26" aria-hidden="true"><g fill="#FF7A1A"><rect x="0" y="0" width="14" height="4" rx="1"/><rect x="0" y="22" width="14" height="4" rx="1"/><rect x="4.5" y="4" width="5" height="18"/></g></svg>
+        <span class="word">mberGym</span>
+      </span>
+    </a>
+    <nav class="main"><a href="./">Home</a><a href="privacy.html">Privacy</a></nav>
+    <span class="lang"><a class="on" href="manual.html">EN</a> | <a href="../de/anleitung.html">DE</a></span>
+  </div>
+</header>
+
+<main class="legal manual" id="top">
+  <h1>Manual</h1>
+  <p class="meta">“ImberGym” app for Android · Last updated: October 2026</p>
+  <p>Every ImberGym feature explained step by step. Features marked <span class="tag">PREMIUM</span> are part of ImberGym Premium; everything else is free. During the beta everything is unlocked.</p>
+
+  <nav class="toc" aria-label="Contents">
+    <a href="#start"><span class="no">01</span>Getting started</a>
+    <a href="#layout"><span class="no">02</span>How the app is organised</a>
+    <a href="#overview"><span class="no">03</span>Overview</a>
+    <a href="#plans"><span class="no">04</span>Plans &amp; templates</a>
+    <a href="#exercises"><span class="no">05</span>Exercises</a>
+    <a href="#workout"><span class="no">06</span>Workout</a>
+    <a href="#rest"><span class="no">07</span>Rest &amp; lock screen</a>
+    <a href="#interval"><span class="no">08</span>Interval training</a>
+    <a href="#coach"><span class="no">09</span>Recommendation &amp; plateau coach</a>
+    <a href="#voice"><span class="no">10</span>Voice control</a>
+    <a href="#outdoor"><span class="no">11</span>Outdoor &amp; Trackshow</a>
+    <a href="#history"><span class="no">12</span>History &amp; stats</a>
+    <a href="#nutrition"><span class="no">13</span>Nutrition</a>
+    <a href="#recipes"><span class="no">14</span>Recipes</a>
+    <a href="#body"><span class="no">15</span>Weight &amp; photos</a>
+    <a href="#heart"><span class="no">16</span>Heart rate &amp; Health Connect</a>
+    <a href="#supplements"><span class="no">17</span>Supplements</a>
+    <a href="#gyms"><span class="no">18</span>Gyms &amp; membership cards</a>
+    <a href="#calendar"><span class="no">19</span>Calendar</a>
+    <a href="#profile"><span class="no">20</span>Profile &amp; settings</a>
+    <a href="#data"><span class="no">21</span>Backup &amp; import</a>
+    <a href="#premium"><span class="no">22</span>Free &amp; Premium</a>
+    <a href="#help"><span class="no">23</span>Help</a>
+  </nav>
+
+  <section class="part" id="start">
+    <h2><span class="no">01</span>Getting started</h2>
+    <p>When you first open ImberGym, a few short questions set things up. You can change everything later in your profile.</p>
+    <ol>
+      <li><strong>Language</strong> – English or German (preselected from your phone).</li>
+      <li><strong>Units</strong> – metric (kg, km) or imperial (lb, mi). The app always stores exact values; the unit only affects display.</li>
+      <li><strong>About you</strong> – name, gender (including “prefer not to say”), age, optionally weight and height. Weight and height are used for bodyweight exercises and your calorie goal.</li>
+      <li><strong>Goal and training</strong> – goal (e.g. build muscle, lose weight), activity level, where you train (gym, home with dumbbells, no equipment) and optional training days. Training days are only a plan – nothing is ever marked as “missed”.</li>
+      <li><strong>Rest timer</strong> – whether a countdown runs after each set.</li>
+      <li><strong>Count calories?</strong> – without nutrition the “Nutrition” tab disappears and ImberGym is a pure workout log.</li>
+      <li><strong>Starter plan and calendar</strong> – the app can create a matching beginner plan and save workouts to your calendar (see <a href="#calendar">Calendar</a>).</li>
+    </ol>
+    <div class="box"><p><strong>New phone?</strong> Tap “Restore backup” on the first page and pick the ZIP file of your backup (see <a href="#data">Backup</a>).</p></div>
+  </section>
+
+  <section class="part" id="layout">
+    <h2><span class="no">02</span>How the app is organised</h2>
+    <ul>
+      <li><strong>Overview</strong> – your day: week, recommendation, plans, start a workout.</li>
+      <li><strong>Plans</strong> – your plans, templates and the exercise library.</li>
+      <li><strong>History</strong> – stats, all workouts and records.</li>
+      <li><strong>Nutrition</strong> – calories, macros, foods and recipes (can be turned off).</li>
+      <li><strong>Profile</strong> – settings, body stats, supplements, gyms, backup and more.</li>
+    </ul>
+    <p>Messages at the bottom disappear after a few seconds or when tapped – including those with “Undo”.</p>
+  </section>
+
+  <section class="part" id="overview">
+    <h2><span class="no">03</span>Overview</h2>
+    <figure class="shot"><img src="../assets/screens/en_overview.png" alt="Overview" width="320" height="677" loading="lazy"><figcaption>Overview</figcaption></figure>
+    <h3>Week</h3>
+    <p>The Mon–Sun bar shows completed workouts in orange with a tick, upcoming planned days dashed and today with a frame.</p>
+    <h3>Today’s pick</h3>
+    <p>If your most recently used plan has several units, the card suggests the right one – based on the plan order and how recovered your muscles are (see <a href="#coach">Recommendation</a>). “Start workout” gets you going immediately.</p>
+    <h3>Your plans</h3>
+    <ul>
+      <li>All plans are collapsed, the most recently trained first. <strong>Tap</strong> to expand and see every unit with its last session (duration, sets, volume or distance).</li>
+      <li><strong>▶</strong> starts the next unit. If a plan has several units, the app asks which one – the next one due is at the top.</li>
+      <li>Tapping a card opens the last workout of that unit with all sets.</li>
+      <li>Via the <kbd>⋮</kbd> menu you can “Remove from overview” (with undo). The plan stays in the Plans tab and comes back when you train it again.</li>
+      <li>Free workouts from the last four weeks appear here as well (named after their exercises, e.g. “Hiking”) and can be repeated with ▶.</li>
+    </ul>
+    <h3>Quick start</h3>
+    <ul>
+      <li><strong>Other unit</strong> – start any unit of a plan.</li>
+      <li><strong>Free workout</strong> – no plan, add exercises as you go.</li>
+      <li><strong>Interval</strong> – Tabata and more. <span class="tag">PREMIUM</span></li>
+      <li><strong>Outdoor with GPS</strong> – record runs, rides and hikes. <span class="tag">PREMIUM</span></li>
+    </ul>
+    <p>Depending on your settings the overview also shows “Nutrition today”, “Supplements today”, an open GPS recording (“resume”) and a card icon at the top right for your membership cards.</p>
+  </section>
+
+  <section class="part" id="plans">
+    <h2><span class="no">04</span>Plans &amp; templates</h2>
+    <h3>Templates</h3>
+    <p>The Plans tab contains ready-made plans: beginner (gym, home with and without dumbbells), full body A/B, upper/lower, push/pull/legs, muscle-group splits, abs-legs-glutes, calisthenics, kettlebell, bands, yoga and more. Start a template directly or copy it as your own plan. When copying, the app asks whether the rest timer should run.</p>
+    <h3>Create and edit a plan</h3>
+    <ol>
+      <li>Plans tab → create a new plan and name it.</li>
+      <li>Add <strong>units</strong> (e.g. Push, Pull, Legs). Units are an order, not fixed weekdays.</li>
+      <li>Add <strong>exercises</strong> to each unit and set sets, reps (also a range like 8–12), rest between sets and rest before the next exercise. “Per side” marks unilateral exercises.</li>
+      <li><strong>Superset:</strong> link two consecutive exercises – during the workout they alternate, rest comes after the round.</li>
+      <li>Add an <strong>interval block</strong> (Tabata etc.) below the list – see <a href="#interval">Interval training</a>.</li>
+    </ol>
+    <p>Every change is saved immediately. A <strong>time estimate</strong> at the top shows roughly how long the unit takes. The editor also switches the rest timer for this plan and its display on the overview on or off.</p>
+    <h3>Share a plan as a QR code</h3>
+    <p>In the plan editor tap the QR icon: the whole plan is inside the code – no server involved. “Share as image” sends it e.g. via a messenger. Sharing is free.</p>
+    <p><strong>Scan a plan</strong> <span class="tag">PREMIUM</span>: Plans tab → “Scan plan”, capture the code with the camera or load it from an image, check the preview, “Import”.</p>
+    <p>Free: up to 5 own plans (copied templates count); unlimited with Premium.</p>
+  </section>
+
+  <section class="part" id="exercises">
+    <h2><span class="no">05</span>Exercises</h2>
+    <figure class="shot"><img src="../assets/screens/en_exercise.png" alt="Exercise detail" width="320" height="677" loading="lazy"><figcaption>Exercise with animation</figcaption></figure>
+    <h3>Exercise library</h3>
+    <p>More than 250 exercises from machines to yoga. Search by name or muscle, filter by muscle and equipment.</p>
+    <h3>Exercise detail</h3>
+    <ul>
+      <li><strong>Animation</strong> of the movement with the muscles involved in orange (primary strong, secondary lighter), the phase (“Press”, “Lower slowly”) and a rep counter.</li>
+      <li><strong>Muscles</strong> and <strong>equipment</strong>, “How to” with tempo and technique tips.</li>
+      <li><strong>Your progress</strong> – a chart of your values across workouts.</li>
+      <li>For calisthenics, the <strong>progression levels</strong> (easier/harder).</li>
+    </ul>
+    <p>The figure comes in a male and a female version – set it in your profile under “Figure”.</p>
+    <h3>Create your own exercise</h3>
+    <ol>
+      <li>Library → create your own exercise.</li>
+      <li>Choose name, equipment and tracking: weight × reps, bodyweight × reps, reps with band strength, time, cardio or <strong>GPS recording</strong> (for your own outdoor sports; then also “Show pace” and “Auto pause”).</li>
+      <li>Tap muscles on the body map: 1× = primary, 2× = secondary, 3× = off.</li>
+    </ol>
+    <p>Own exercises with history are archived when deleted – your history stays. Free up to 5 own exercises, unlimited with Premium.</p>
+  </section>
+
+  <section class="part" id="workout">
+    <h2><span class="no">06</span>Workout</h2>
+    <figure class="shot"><img src="../assets/screens/en_workout.png" alt="Workout" width="320" height="677" loading="lazy"><figcaption>Active set</figcaption></figure>
+    <h3>Starting</h3>
+    <p>From the overview (▶, “Today’s pick”, “Other unit”, “Free workout”) or the Plans tab. A running workout even survives a phone restart – opening the app takes you straight back.</p>
+    <h3>The workout screen</h3>
+    <ul>
+      <li><strong>One exercise per page</strong> – swipe to change exercise, the last page is the summary. At the top: exercise x of y, workout duration and (with a chest strap) your heart rate.</li>
+      <li><strong>Set list:</strong> done, “now” (orange) and open. Tap a set to select it.</li>
+      <li><strong>Values:</strong> change weight and reps with <kbd>−</kbd>/<kbd>+</kbd> or tap the big number to type it (comma and dot both work). Last time’s values are prefilled.</li>
+      <li><strong>“Set n done”</strong> ticks the set, starts the rest and moves on to the next exercise automatically (in a superset to the partner exercise).</li>
+      <li><strong>Add set</strong> for an extra set. Sets you didn’t do stay empty and are dropped when you finish.</li>
+    </ul>
+    <h3>Helpers on the set card</h3>
+    <ul>
+      <li>Tap the exercise <strong>thumbnail</strong>: animation and how-to without leaving the workout.</li>
+      <li><strong>Machine setting</strong> (machines, cables, barbell): remember e.g. the seat height – it’s there next time.</li>
+      <li><strong>Weight step</strong> (e.g. dumbbells): step size of <kbd>−</kbd>/<kbd>+</kbd> per piece of equipment (default 2.5 kg / 5 lb).</li>
+      <li><strong>Machine taken? Swap</strong> or <strong>Swap exercise</strong>: pick a suitable alternative (only before a set of the exercise is done).</li>
+      <li><strong>Progression tip:</strong> if you hit all reps, the app suggests more weight (or less assistance, a stronger band, the next level). Only “Apply” enters it.</li>
+      <li><strong>New record!</strong> appears right after ticking a set when you beat a previous best.</li>
+    </ul>
+    <h3>Menu ⋮</h3>
+    <p>Add exercise, choose gym <span class="tag">PREMIUM</span>, show card <span class="tag">PREMIUM</span>, rest timer on/off, voice commands, remove exercise, discard workout.</p>
+    <h3>Cardio and holds</h3>
+    <p>Cardio exercises have no sets: time and distance (floors on a stair climber), level on machines, then “Done”. Holds (e.g. plank) record seconds.</p>
+    <h3>Bodyweight and assistance</h3>
+    <p>For bodyweight exercises you enter added weight, for assisted exercises (e.g. assisted pull-up) the assistance – the app calculates with your bodyweight from the profile. If it’s missing, it asks once on the first set.</p>
+    <h3>Finishing</h3>
+    <p>“Finish workout” on the summary page, or <kbd>✕</kbd> / the back button: the app asks “Finish / Discard / Keep training”. Without a completed set nothing is saved.</p>
+  </section>
+
+  <section class="part" id="rest">
+    <h2><span class="no">07</span>Rest &amp; lock screen</h2>
+    <ul>
+      <li>After each set the <strong>rest countdown</strong> runs at the bottom with “Up next”, <kbd>−15 s</kbd>, <kbd>+15 s</kbd> and “Skip”. Its length comes from the plan (set rest or rest before the next exercise).</li>
+      <li>The timer keeps running when you lock the phone or switch apps; a notification shows the countdown, and the <strong>rest signal</strong> plays at the end.</li>
+      <li>Choose the <strong>rest signal</strong> in your profile: beeps, gong, bell, whistle, boxing bell, soft, system sound or none – with preview. Vibration is a separate switch.</li>
+      <li><strong>Turn the timer off:</strong> per plan in the editor, for free workouts in the profile, during a workout via <kbd>⋮</kbd>.</li>
+      <li><strong>Heart-rate based rest</strong> <span class="tag">PREMIUM</span>: with a chest strap the rest ends as soon as your heart rate drops to your threshold (after 30 s at the earliest, with the timer at the latest).</li>
+    </ul>
+    <h3>Lock screen</h3>
+    <p>During a workout ImberGym appears above the lock screen: logo and a large clock (rest or workout time). After 2 minutes it dims, a tap brightens it; “Tap to unlock” takes you back to the workout. The display stays on during the workout.</p>
+  </section>
+
+  <section class="part" id="interval">
+    <h2><span class="no">08</span>Interval training <span class="tag">PREMIUM</span></h2>
+    <figure class="shot"><img src="../assets/screens/en_interval.png" alt="Interval training" width="320" height="677" loading="lazy"><figcaption>Tabata, round 2</figcaption></figure>
+    <h3>Quick start</h3>
+    <ol>
+      <li>Overview → “Interval” tile.</li>
+      <li>Pick a template: Tabata 20/10 × 8, HIIT 40/20 × 8, 30/30 × 10 or EMOM 60 s × 10 – everything adjustable: work, rest, rounds, sets and rest between sets.</li>
+      <li>Add exercises – they alternate each round.</li>
+      <li>“Start intervals”.</li>
+    </ol>
+    <h3>How it runs</h3>
+    <p>After 10 s of get-ready a big countdown shows work (orange) and rest (grey, with “Up next” and the figure). Before work a voice counts “One, two, three – go!”, before its end “Three, two, one – stop!” (can be switched off under rest signal in the profile; then beeps). It works with a locked phone too. Pause and finish any time; completed intervals are saved. At the end you can enter your reps per round.</p>
+    <h3>In a plan</h3>
+    <p>Add an “Interval block (Tabata etc.)” in the plan editor – the block becomes its own page in the workout.</p>
+  </section>
+
+  <section class="part" id="coach">
+    <h2><span class="no">09</span>Today’s pick &amp; plateau coach</h2>
+    <h3>Today’s pick</h3>
+    <p>For plans with several units: if the next unit in the plan is well recovered (at least 85 %), it’s recommended; otherwise the best-recovered one. The card shows recovery of the main muscle groups and a hint like “Legs only 27 % recovered”. <kbd>ⓘ</kbd> explains the rule. Can be turned off in the profile.</p>
+    <h3>Plateau coach <span class="tag">PREMIUM</span></h3>
+    <p>If an exercise hasn’t improved for 4 workouts (or 3 workouts over 3 weeks), a yellow hint appears before the first set with a suggestion, e.g. “go lighter today (70 kg × 8) and push again afterwards”.</p>
+    <ul>
+      <li><strong>Apply</strong> enters the lighter weight (−10 %) in the open sets.</li>
+      <li><strong>More</strong> shows the trend and options: deload, a different rep range, a variation, longer rest.</li>
+      <li><strong>Hide for 2 weeks</strong> if you deliberately want to continue.</li>
+    </ul>
+    <p>Cardio and holds never get a plateau hint. Can be turned off in the profile.</p>
+  </section>
+
+  <section class="part" id="voice">
+    <h2><span class="no">10</span>Voice control <span class="tag">PREMIUM</span></h2>
+    <h3>Turning it on</h3>
+    <p>Profile → “Voice control”. Only now does Android ask for the microphone. A microphone appears at the top of the workout screen.</p>
+    <h3>Single command</h3>
+    <p>Tap the mic and say a command. The first time, the app shows the command list (“Voice commands”, any time via <kbd>⋮</kbd> or in the profile).</p>
+    <table>
+      <tr><th>Say</th><th>Effect</th></tr>
+      <tr><td>“80 kilos” / “80 kilograms”</td><td>enter weight</td></tr>
+      <tr><td>“10 reps”</td><td>enter reps</td></tr>
+      <tr><td>“80 times 10”</td><td>weight and reps</td></tr>
+      <tr><td>“done” / “set done”</td><td>complete the set (rest starts)</td></tr>
+      <tr><td>“heavier” / “lighter”</td><td>one weight step up or down</td></tr>
+      <tr><td>“one more” / “one less”</td><td>one rep more or less</td></tr>
+      <tr><td>“skip rest”</td><td>end the rest</td></tr>
+      <tr><td>“more rest” / “less rest”</td><td>30 seconds more or less</td></tr>
+      <tr><td>“next exercise” / “previous exercise”</td><td>switch exercise</td></tr>
+      <tr><td>“help”</td><td>show the command list</td></tr>
+    </table>
+    <p>Combine several in one sentence: “82.5 kilos, 8 reps, done”. German commands work as well.</p>
+    <h3>Hands-free</h3>
+    <p>Profile → Voice control → “Hands-free”. The app then listens continuously during a workout while the workout screen is open and the display is on. So that conversations at the gym don’t trigger anything, every command starts with <strong>“Gym”</strong>: “Gym, 80 kilos, 10 reps, done”. The mic at the top is orange while listening; tap to pause. Below the progress bar, “Heard: …” shows what was recognised.</p>
+    <div class="box"><p>Recognition uses your phone’s speech recognition – on the device when possible. ImberGym records and stores nothing.</p></div>
+  </section>
+
+  <section class="part" id="outdoor">
+    <h2><span class="no">11</span>Outdoor &amp; Trackshow <span class="tag">PREMIUM</span></h2>
+    <figure class="shot"><img src="../assets/screens/en_trackshow.png" alt="Trackshow" width="320" height="677" loading="lazy"><figcaption>Trackshow</figcaption></figure>
+    <h3>Recording</h3>
+    <ol>
+      <li>Overview → “Outdoor with GPS” → choose the activity (running, cycling, hiking …).</li>
+      <li>Allow location “while using the app”. Start recording – the display may be off; a notification shows “ImberGym is recording”.</li>
+      <li>Pause and resume any time. When running and cycling the app <strong>pauses automatically</strong> after 10 s standing still and resumes with your first step (not when hiking – the break is part of the tour). After a manual pause it also resumes by itself once you move on.</li>
+      <li>“Finish” saves the tour as a workout with distance, time, speed or pace and elevation (from the barometer).</li>
+    </ol>
+    <h3>Trackshow</h3>
+    <p>After finishing, the Trackshow plays your route on contour lines – with camera flight and highlights (steepest section, highest point, fastest kilometre, record), result card and elevation profile. “Play again” restarts it; tap the place name to change it.</p>
+    <p><strong>Share</strong> as a story image (9:16) or as a <strong>video</strong> with camera flight. The workout details also offer a <strong>GPX export</strong> for other apps.</p>
+  </section>
+
+  <section class="part" id="history">
+    <h2><span class="no">12</span>History &amp; stats</h2>
+    <figure class="shot"><img src="../assets/screens/en_stats.png" alt="Stats" width="320" height="677" loading="lazy"><figcaption>Stats</figcaption></figure>
+    <h3>Stats</h3>
+    <ul>
+      <li>Period <strong>week / month / 3 months</strong> (rolling up to today) compared with the period before: workouts, training time, volume.</li>
+      <li><strong>What you trained</strong> <span class="tag">PREMIUM</span>: body map front/back, the more sets the stronger the colour; tap for the number. Toggle <strong>Recovery</strong>: how recovered each muscle is (estimate).</li>
+      <li><strong>Distribution</strong> across muscle groups as a ring.</li>
+      <li><strong>Records</strong> – the latest ones; “See all” opens the list. Tap a record for the exercise’s progress.</li>
+      <li><strong>Show weight &amp; body fat</strong> and the <strong>weekly and yearly review</strong> as a shareable card.</li>
+    </ul>
+    <h3>Workouts</h3>
+    <figure class="shot"><img src="../assets/screens/en_history.png" alt="History" width="320" height="677" loading="lazy"><figcaption>History with filters</figcaption></figure>
+    <p>All workouts by year and month with totals. Filter by <strong>plan</strong> (including “Free workouts”) and <strong>exercise</strong>, combinable.</p>
+    <h3>Workout details</h3>
+    <ul>
+      <li>All exercises and sets, trophies for records, gym or place.</li>
+      <li><strong>Edit:</strong> tap a set to change it, add or delete sets, adjust date, start time and duration, delete the workout.</li>
+      <li><strong>Heart rate</strong> (average, maximum, curve) – from the chest strap or via “Load heart rate from watch”.</li>
+      <li><strong>Share workout</strong> as a card with muscles, exercises and new records; for GPS tours the Trackshow and GPX.</li>
+    </ul>
+    <h3>Records</h3>
+    <p>Per exercise: max weight, estimated 1RM, volume, most reps, longest hold; for cardio longest distance, fastest pace or speed, longest duration. A record only counts if it beats a previous best.</p>
+  </section>
+
+  <section class="part" id="nutrition">
+    <h2><span class="no">13</span>Nutrition</h2>
+    <figure class="shot"><img src="../assets/screens/en_nutrition.png" alt="Nutrition" width="320" height="677" loading="lazy"><figcaption>Day with calorie ring</figcaption></figure>
+    <h3>The day</h3>
+    <p>Use ‹ › to move between days. The ring shows eaten versus goal and “left”, below it protein, carbs and fat. Four meals: breakfast, lunch, dinner, snacks.</p>
+    <h3>Logging food</h3>
+    <figure class="shot"><img src="../assets/screens/en_food.png" alt="Foods" width="320" height="677" loading="lazy"><figcaption>Food tiles</figcaption></figure>
+    <ul>
+      <li><kbd>+</kbd> on a meal opens the tiles: first what you often eat at this meal, otherwise typical suggestions.</li>
+      <li><strong>Tap</strong> logs one portion immediately (the amount is shown under the name), with “Undo”. The small <kbd>−</kbd> on the tile removes a portion again.</li>
+      <li><strong>Long press</strong> opens the amount in grams, millilitres or portions (also ½) with a nutrition table.</li>
+      <li><strong>Search:</strong> more than 1,200 foods and everyday dishes, offline.</li>
+      <li><strong>Barcode:</strong> scan a product – it’s looked up locally first, otherwise at Open Food Facts. Check the values, save – next time it’s there instantly.</li>
+      <li>Create your <strong>own food</strong> (values per 100 g or 100 ml, “Liquid” switch) or use <strong>Quick add</strong> (calories only).</li>
+      <li><strong>From recipes</strong> – a recipe straight into this meal.</li>
+      <li>Tap an entry to change the amount or remove it.</li>
+    </ul>
+    <h3>Goals</h3>
+    <p>“Adjust goals” (or tap the ring): choose your goal, automatic calorie goal (from height, weight, age, activity) or your own, individual macros, a separate <strong>rest day goal</strong>. <strong>Dynamic calorie goal</strong> <span class="tag">PREMIUM</span>: adds a share of your measured activity from Health Connect (slider 0–100 %).</p>
+    <p>Not interested in calories? Profile → turn nutrition off; the tab disappears.</p>
+  </section>
+
+  <section class="part" id="recipes">
+    <h2><span class="no">14</span>Recipes</h2>
+    <p>Nutrition → “Discover recipes” or the library: 40 original recipes with filters (meal, high protein, vegetarian). A recipe shows calories and macros per serving, ingredients with a <strong>serving calculator</strong> (−/+, ½, ¼, ¾), steps and a tip. “1 serving to diary” logs it. 6 basic recipes are free; all others and <strong>your own recipes</strong> (ingredients from the food search, own photo) are Premium <span class="tag">PREMIUM</span>.</p>
+  </section>
+
+  <section class="part" id="body">
+    <h2><span class="no">15</span>Weight, body fat &amp; progress photos</h2>
+    <h3>Weight &amp; body fat</h3>
+    <ul>
+      <li>Profile → “Weight &amp; body fat” → add an entry. Body fat as a value or <strong>estimated from measurements</strong> (neck, waist, hips if needed – requires height in the profile).</li>
+      <li>The “Current” card shows the 7-day average and the change. Charts <span class="tag">PREMIUM</span> with 1 month, 3 months, 1 year, all.</li>
+      <li>Entries are grouped by month; tap to edit or delete.</li>
+      <li><strong>Import from Health Connect</strong> (e.g. a Withings scale): turn on the switch and allow – new measurements arrive by themselves; pull down to refresh immediately.</li>
+      <li>Your profile weight always follows the newest entry.</li>
+    </ul>
+    <h3>Progress photos <span class="tag">PREMIUM</span></h3>
+    <p>Profile → “Progress photos”: choose the view (front, side, back); “Camera” shows your last photo semi-transparent as an <strong>overlay</strong> (same pose and distance), with self-timer. Compare before/after with a slider or crossfade. Photos stay in the app, not in the gallery and not in the Android backup; “Share / Save”, “Export all photos” and “Share comparison” hand them out deliberately.</p>
+  </section>
+
+  <section class="part" id="heart">
+    <h2><span class="no">16</span>Heart rate &amp; Health Connect</h2>
+    <h3>Heart rate from your watch</h3>
+    <p>If your watch writes to Health Connect (e.g. Samsung, Google, Garmin via Health Connect): in the workout details tap “Load heart rate from watch” – allow it once, afterwards ImberGym fetches the heart rate of recent workouts automatically. Tip: start a workout on the watch as well, otherwise it only measures every few minutes.</p>
+    <div class="box"><p><strong>Huawei watches:</strong> Huawei Health does not write to Health Connect. The app “Health Sync” transfers heart rate – then it works as above.</p></div>
+    <h3>Chest strap &amp; heart-rate zones <span class="tag">PREMIUM</span></h3>
+    <figure class="shot"><img src="../assets/screens/en_strap.png" alt="Chest strap" width="320" height="677" loading="lazy"><figcaption>Chest strap &amp; zones</figcaption></figure>
+    <ol>
+      <li>Profile → “Chest strap &amp; zones” → put the strap on, “Search”, pair (allow “Nearby devices”).</li>
+      <li>During a workout it connects by itself; your heart rate shows at the top in the colour of its zone.</li>
+      <li>Set your max heart rate (otherwise 220 − age); five zones are derived from it.</li>
+      <li>Optionally <strong>heart-rate based rest</strong> with your own threshold (see <a href="#rest">Rest</a>).</li>
+    </ol>
+    <p>Many watches can broadcast heart rate like a strap (e.g. Garmin “Broadcast heart rate”, newer Huawei watches “Share heart rate”, Polar, Coros, Suunto) – just pair them like a strap.</p>
+  </section>
+
+  <section class="part" id="supplements">
+    <h2><span class="no">17</span>Supplements <span class="tag">PREMIUM</span></h2>
+    <p>Profile → “Supplements”: add your own products (name, form, unit such as mg, IU, piece, drops …, usual amount, optionally active ingredient per unit). Tap “Taken” each day (long press = different amount, ↶ = undo, also for past days). <strong>Reminders</strong> come with a time and weekdays (daily, Mon–Fri or custom). The monthly calendar shows on which days you took everything. ImberGym deliberately suggests no products or doses.</p>
+  </section>
+
+  <section class="part" id="gyms">
+    <h2><span class="no">18</span>Gyms &amp; membership cards <span class="tag">PREMIUM</span></h2>
+    <h3>My gyms</h3>
+    <p>Profile → “My gyms”: create a gym with a name and “Use current location”. When you start a workout there, the app recognises the gym (“Gym detected”); otherwise choose it during the workout via <kbd>⋮</kbd> → “Choose gym”. The place appears in the history, the details and the calendar entry.</p>
+    <h3>Membership cards</h3>
+    <p>Profile → “Membership cards”: scan the card’s barcode or QR code with the camera or enter number and format, pick a name and colour, link a gym. Tap to show the card full-screen at full brightness – for the scanner at the entrance. Quick access via the card icon on the overview and during a workout via <kbd>⋮</kbd> → “Show card”. Cards stay on your phone only (never in a backup). Transponder chips (RFID/NFC) unfortunately can’t be emulated by a phone.</p>
+  </section>
+
+  <section class="part" id="calendar">
+    <h2><span class="no">19</span>Calendar</h2>
+    <p>Profile → “Save workouts to calendar”: grant permission, pick a calendar; previous workouts can be added too. Every finished workout becomes an event (title “ImberGym: plan name”, start and end, exercises and sets in the description, gym as location) and is updated after editing or removed when deleted. When you switch it off, the app asks whether to delete existing entries. No events are created in advance.</p>
+  </section>
+
+  <section class="part" id="profile">
+    <h2><span class="no">20</span>Profile &amp; settings</h2>
+    <ul>
+      <li><strong>Personal:</strong> name, gender, age, height, weight, goal, activity.</li>
+      <li><strong>Language</strong> and <strong>units</strong> – changes apply instantly.</li>
+      <li><strong>Figure:</strong> male or female figure in animations and body map.</li>
+      <li><strong>Rest signal:</strong> sound with preview, vibration, “Voice in interval training”.</li>
+      <li><strong>Rest timer</strong> default for free workouts and new plans.</li>
+      <li><strong>Today’s pick</strong>, <strong>plateau coach</strong> and <strong>voice control</strong> on/off.</li>
+      <li><strong>Nutrition</strong> on/off.</li>
+      <li>Weight &amp; body fat, progress photos, supplements, chest strap &amp; zones, my gyms, membership cards, calendar, data &amp; backup.</li>
+      <li><strong>ImberGym Premium</strong>, <strong>Rate ImberGym</strong> and <strong>About ImberGym</strong> (version, privacy, contact, sources, licences).</li>
+    </ul>
+  </section>
+
+  <section class="part" id="data">
+    <h2><span class="no">21</span>Backup, import &amp; export</h2>
+    <h3>Backup</h3>
+    <p>Profile → “Data &amp; backup” → create backup: a ZIP file with all data (progress photos only if you include them) – save it via the share menu, e.g. to Google Drive or Files. Keep it safe; ImberGym has no cloud.</p>
+    <h3>Restore</h3>
+    <p>“Choose backup file” → check date and number of workouts → “Replace”. The app restarts with the backed-up data. Also possible on the first page after installing.</p>
+    <h3>Import from other apps</h3>
+    <p>“Choose CSV file”: exports from <strong>Strong</strong> and <strong>Hevy</strong> are recognised (for Strong pick the weight unit). The preview shows workouts, sets and new own exercises; duplicate workouts are skipped.</p>
+    <h3>Export</h3>
+    <p>“Export workouts as CSV” – one row per set, opens e.g. in Excel.</p>
+  </section>
+
+  <section class="part" id="premium">
+    <h2><span class="no">22</span>Free &amp; Premium</h2>
+    <p><strong>Free:</strong> the complete workout with all exercises and animations, up to 5 own plans and 5 own exercises, history, records, stats, today’s pick, calorie tracker with barcode, 6 recipes, weight, heart rate from Health Connect, calendar, backup and import.</p>
+    <p><strong>Premium</strong> unlocks: unlimited plans and own exercises, body map and recovery, weight and body-fat charts, plateau coach, voice control, interval training, GPS recording with Trackshow and video, chest strap with zones and heart-rate based rest, gyms and membership cards, supplements, progress photos, all and own recipes, dynamic calorie goal and importing plans via QR code.</p>
+    <p>Everything is free until your first finished workout, then for 7 more days to try. After that: monthly, yearly or a one-time lifetime purchase – Profile → “ImberGym Premium”. “Restore purchases” brings a purchase back on a new phone. Cancel subscriptions in Google Play.</p>
+  </section>
+
+  <section class="part" id="help">
+    <h2><span class="no">23</span>Help</h2>
+    <ul>
+      <li><strong>No rest signal?</strong> Allow notifications for ImberGym and check “Do not disturb”.</li>
+      <li><strong>Heart rate missing for short workouts?</strong> Without a workout on the watch it only measures every few minutes – train on the watch too or use a chest strap.</li>
+      <li><strong>Gym not detected?</strong> Allow location and save the gym’s location once on site.</li>
+      <li><strong>Voice command not understood?</strong> “Heard: …” shows what was recognised. For recognition without internet, download the offline language in your Android settings.</li>
+    </ul>
+    <p>Questions, wishes, bugs: <a href="mailto:chr.mathai@gmail.com?subject=ImberGym">chr.mathai@gmail.com</a></p>
+    <p class="top-link"><a href="#top">↑ back to top</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap cols">
+    <div>
+      <h4>ImberGym</h4>
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="manual.html">Manual</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="mailto:chr.mathai@gmail.com?subject=ImberGym">Support</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p style="margin:0">Christoph Imber<br>4742 Pram, Austria<br><a href="mailto:chr.mathai@gmail.com">chr.mathai@gmail.com</a></p>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:24px">© 2026 Christoph Imber · ImberGym</div>
+</footer>
+</body>
+</html>
