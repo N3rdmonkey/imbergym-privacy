@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manual – ImberGym</title>
+  <meta name="description" content="Manual de la app ImberGym: entrenamientos, planes, estadísticas, nutrición, aire libre, reloj y todos los ajustes paso a paso.">
+  <link rel="icon" href="../assets/icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/icon.png">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="alternate" hreflang="de" href="../de/anleitung.html">
+  <link rel="alternate" hreflang="en" href="../en/manual.html">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="./" aria-label="ImberGym">
+      <span class="mark">
+        <svg viewBox="0 0 14 26" width="14" height="26" aria-hidden="true"><g fill="#FF7A1A"><rect x="0" y="0" width="14" height="4" rx="1"/><rect x="0" y="22" width="14" height="4" rx="1"/><rect x="4.5" y="4" width="5" height="18"/></g></svg>
+        <span class="word">mberGym</span>
+      </span>
+    </a>
+    <nav class="main"><a href="./">Inicio</a><a href="privacy.html">Privacidad</a></nav>
+    <span class="lang"><a href="../en/manual.html">EN</a> | <a href="../de/anleitung.html">DE</a> | <a class="on" href="manual.html">ES</a></span>
+  </div>
+</header>
+
+<main class="legal manual" id="top">
+  <h1>Manual</h1>
+  <p class="meta">App «ImberGym» para Android · Última actualización: noviembre de 2026</p>
+  <p>Todas las funciones de ImberGym explicadas paso a paso. Las funciones marcadas con <span class="tag">PREMIUM</span> forman parte de ImberGym Premium; todo lo demás es gratis.</p>
+
+  <nav class="toc" aria-label="Contenido">
+    <a href="#start"><span class="no">01</span>Primeros pasos</a>
+    <a href="#layout"><span class="no">02</span>Cómo está organizada la app</a>
+    <a href="#overview"><span class="no">03</span>Resumen</a>
+    <a href="#plans"><span class="no">04</span>Planes y plantillas</a>
+    <a href="#exercises"><span class="no">05</span>Ejercicios</a>
+    <a href="#workout"><span class="no">06</span>Entrenamiento</a>
+    <a href="#rest"><span class="no">07</span>Descanso y pantalla de bloqueo</a>
+    <a href="#interval"><span class="no">08</span>Entrenamiento por intervalos</a>
+    <a href="#coach"><span class="no">09</span>Recomendación y coach de estancamiento</a>
+    <a href="#watch"><span class="no">10</span>Reloj (Wear OS)</a>
+    <a href="#outdoor"><span class="no">11</span>Aire libre y Trackshow</a>
+    <a href="#history"><span class="no">12</span>Historial y estadísticas</a>
+    <a href="#nutrition"><span class="no">13</span>Nutrición</a>
+    <a href="#recipes"><span class="no">14</span>Recetas</a>
+    <a href="#body"><span class="no">15</span>Peso y fotos</a>
+    <a href="#heart"><span class="no">16</span>Pulso y Health Connect</a>
+    <a href="#supplements"><span class="no">17</span>Suplementos</a>
+    <a href="#gyms"><span class="no">18</span>Gimnasios y tarjetas de socio</a>
+    <a href="#calendar"><span class="no">19</span>Calendario</a>
+    <a href="#profile"><span class="no">20</span>Perfil y ajustes</a>
+    <a href="#data"><span class="no">21</span>Copia de seguridad e importación</a>
+    <a href="#premium"><span class="no">22</span>Gratis y Premium</a>
+    <a href="#help"><span class="no">23</span>Ayuda</a>
+  </nav>
+
+  <section class="part" id="start">
+    <h2><span class="no">01</span>Primeros pasos</h2>
+    <p>La primera vez que abres ImberGym, unas pocas preguntas lo dejan todo listo. Puedes cambiarlo todo más tarde en tu perfil.</p>
+    <ol>
+      <li><strong>Idioma</strong>: español, inglés o alemán (preseleccionado según tu móvil).</li>
+      <li><strong>Unidades</strong>: métrico (kg, km) o imperial (lb, mi). La app guarda siempre los valores exactos; la unidad solo afecta a cómo se muestran.</li>
+      <li><strong>Sobre ti</strong>: nombre, género (incluido «prefiero no decirlo»), edad y, opcionalmente, peso y altura. El peso y la altura se usan para los ejercicios con peso corporal y para tu objetivo de calorías.</li>
+      <li><strong>Objetivo y entrenamiento</strong>: objetivo (p. ej. ganar músculo, perder grasa), nivel de actividad, dónde entrenas (gimnasio, en casa con mancuernas, sin material) y días de entrenamiento opcionales. Los días de entrenamiento son solo un plan: nunca se marca nada como «perdido».</li>
+      <li><strong>Temporizador de descanso</strong>: si corre una cuenta atrás después de cada serie.</li>
+      <li><strong>¿Contar calorías?</strong>: sin nutrición desaparece la pestaña «Nutrición» y ImberGym es un diario de entrenamiento puro.</li>
+      <li><strong>Plan inicial y calendario</strong>: la app puede crear un plan para principiantes adecuado y guardar los entrenamientos en tu calendario (véase <a href="#calendar">Calendario</a>).</li>
+    </ol>
+    <div class="box"><p><strong>¿Móvil nuevo?</strong> Toca «Restaurar copia de seguridad» en la primera página y elige el archivo ZIP de tu copia (véase <a href="#data">Copia de seguridad</a>).</p></div>
+  </section>
+
+  <section class="part" id="layout">
+    <h2><span class="no">02</span>Cómo está organizada la app</h2>
+    <ul>
+      <li><strong>Resumen</strong>: tu día: semana, recomendación, planes, empezar un entrenamiento.</li>
+      <li><strong>Planes</strong>: tus planes, plantillas y la biblioteca de ejercicios.</li>
+      <li><strong>Historial</strong>: estadísticas, todos los entrenamientos y récords.</li>
+      <li><strong>Nutrición</strong>: calorías, macros, alimentos y recetas (se puede desactivar).</li>
+      <li><strong>Perfil</strong>: ajustes, medidas corporales, suplementos, gimnasios, copia de seguridad y más.</li>
+    </ul>
+    <p>Los mensajes de abajo desaparecen tras unos segundos o al tocarlos, también los que tienen «Deshacer».</p>
+  </section>
+
+  <section class="part" id="overview">
+    <h2><span class="no">03</span>Resumen</h2>
+    <figure class="shot"><img src="../assets/screens/es_overview.png" alt="Resumen" width="320" height="677" loading="lazy"><figcaption>Resumen</figcaption></figure>
+    <h3>Semana</h3>
+    <p>La barra de lunes a domingo muestra los entrenamientos hechos en naranja con una marca, los próximos días planificados con línea discontinua y el día de hoy con un marco.</p>
+    <h3>Recomendado hoy</h3>
+    <p>Si tu plan usado más recientemente tiene varias sesiones, la tarjeta propone la adecuada, según el orden del plan y lo recuperados que estén tus músculos (véase <a href="#coach">Recomendación</a>). «Empezar entrenamiento» te pone en marcha al instante.</p>
+    <h3>Tus planes</h3>
+    <ul>
+      <li>Todos los planes aparecen plegados, el entrenado más recientemente primero. <strong>Tócalo</strong> para desplegarlo y ver cada sesión con su última vez (duración, series, volumen o distancia).</li>
+      <li><strong>▶</strong> empieza la siguiente sesión. Si un plan tiene varias, la app pregunta cuál: la siguiente que toca está arriba.</li>
+      <li>Al tocar una tarjeta se abre el último entrenamiento de esa sesión con todas las series.</li>
+      <li>Con el menú <kbd>⋮</kbd> puedes «Quitar del resumen» (con deshacer). El plan sigue en la pestaña Planes y vuelve cuando lo entrenas de nuevo.</li>
+      <li>Los entrenamientos libres de las últimas cuatro semanas también aparecen aquí (con el nombre de sus ejercicios, p. ej. «Senderismo») y se pueden repetir con ▶.</li>
+    </ul>
+    <h3>Inicio rápido</h3>
+    <ul>
+      <li><strong>Otra sesión</strong>: empieza cualquier sesión de un plan.</li>
+      <li><strong>Entrenamiento libre</strong>: sin plan, añade ejercicios sobre la marcha.</li>
+      <li><strong>Intervalos</strong>: Tabata y más. <span class="tag">PREMIUM</span></li>
+      <li><strong>Reto</strong>: ¿cuántas repeticiones puedes hacer? La cámara cuenta.</li>
+      <li><strong>Aire libre con GPS</strong>: graba carreras, rutas en bici y senderismo. <span class="tag">PREMIUM</span></li>
+    </ul>
+    <p>Según tus ajustes, el resumen muestra también «Nutrición de hoy», «Suplementos de hoy», una grabación GPS abierta («continuar») y un icono de tarjeta arriba a la derecha para tus tarjetas de socio.</p>
+  </section>
+
+  <section class="part" id="plans">
+    <h2><span class="no">04</span>Planes y plantillas</h2>
+    <h3>Plantillas</h3>
+    <p>La pestaña Planes contiene planes listos: principiante (gimnasio, en casa con y sin mancuernas), cuerpo completo A/B, torso/pierna, empuje/tirón/pierna, rutinas divididas por grupos musculares, abdomen-piernas-glúteos, calistenia, kettlebell, bandas, yoga y más. Empieza una plantilla directamente o cópiala como plan propio. Al copiarla, la app pregunta si debe usarse el temporizador de descanso.</p>
+    <h3>Crear y editar un plan</h3>
+    <ol>
+      <li>Pestaña Planes → crea un plan nuevo y ponle nombre.</li>
+      <li>Añade <strong>sesiones</strong> (p. ej. Empuje, Tirón, Pierna). Las sesiones son un orden, no días fijos de la semana.</li>
+      <li>Añade <strong>ejercicios</strong> a cada sesión y fija series, repeticiones (también un rango como 8–12), descanso entre series y descanso antes del siguiente ejercicio. «Por lado» marca los ejercicios unilaterales.</li>
+      <li><strong>Superserie:</strong> une dos ejercicios seguidos: durante el entrenamiento se alternan y el descanso llega después de la ronda.</li>
+      <li>Añade un <strong>bloque de intervalos</strong> (Tabata, etc.) debajo de la lista: véase <a href="#interval">Entrenamiento por intervalos</a>.</li>
+    </ol>
+    <p>Cada cambio se guarda al instante. Una <strong>estimación de tiempo</strong> arriba muestra cuánto dura más o menos la sesión. En el editor también activas o desactivas el temporizador de descanso de este plan y si se muestra en el resumen.</p>
+    <h3>Compartir un plan como código QR</h3>
+    <p>En el editor del plan toca el icono QR: todo el plan va dentro del código, sin servidor. «Compartir como imagen» lo envía p. ej. por mensajería. Compartir es gratis.</p>
+    <p><strong>Escanear un plan</strong> <span class="tag">PREMIUM</span>: pestaña Planes → «Escanear plan», captura el código con la cámara o cárgalo desde una imagen, revisa la vista previa e «Importar».</p>
+    <p>Gratis: hasta 5 planes propios (las plantillas copiadas cuentan); ilimitados con Premium.</p>
+  </section>
+
+  <section class="part" id="exercises">
+    <h2><span class="no">05</span>Ejercicios</h2>
+    <figure class="shot"><img src="../assets/screens/es_exercise.png" alt="Detalle del ejercicio" width="320" height="677" loading="lazy"><figcaption>Ejercicio con animación</figcaption></figure>
+    <h3>Biblioteca de ejercicios</h3>
+    <p>Más de 250 ejercicios, de máquinas a yoga. Busca por nombre o músculo y filtra por músculo y material.</p>
+    <h3>Detalle del ejercicio</h3>
+    <ul>
+      <li><strong>Animación</strong> del movimiento con los músculos implicados en naranja (principales intensos, secundarios más claros), la fase («Empujar», «Bajar despacio») y un contador de repeticiones.</li>
+      <li><strong>Músculos</strong> y <strong>material</strong>, «Ejecución» con ritmo y consejos de técnica.</li>
+      <li><strong>Tu progreso</strong>: un gráfico de tus valores a lo largo de los entrenamientos.</li>
+      <li>En calistenia, los <strong>niveles de progresión</strong> (más fácil/más difícil).</li>
+    </ul>
+    <p>La figura existe en versión masculina y femenina: elígela en tu perfil, en «Figura».</p>
+    <h3>Crear un ejercicio propio</h3>
+    <ol>
+      <li>Biblioteca → crea tu propio ejercicio.</li>
+      <li>Elige nombre, material y registro: peso × reps, peso corporal × reps, reps con fuerza de la banda, tiempo, cardio o <strong>grabación GPS</strong> (para tus propios deportes al aire libre; entonces también «Mostrar ritmo» y «Pausa automática»).</li>
+      <li>Toca los músculos en el mapa corporal: 1× = principal, 2× = secundario, 3× = quitar.</li>
+    </ol>
+    <p>Los ejercicios propios con historial se archivan al borrarlos: tu historial se conserva. Gratis hasta 5 ejercicios propios, ilimitados con Premium.</p>
+  </section>
+
+  <section class="part" id="workout">
+    <h2><span class="no">06</span>Entrenamiento</h2>
+    <figure class="shot"><img src="../assets/screens/es_workout.png" alt="Entrenamiento" width="320" height="677" loading="lazy"><figcaption>Serie activa</figcaption></figure>
+    <h3>Empezar</h3>
+    <p>Desde el resumen (▶, «Recomendado hoy», «Otra sesión», «Entrenamiento libre») o desde la pestaña Planes. Un entrenamiento en curso sobrevive incluso a un reinicio del móvil: al abrir la app vuelves directamente a él.</p>
+    <h3>La pantalla de entrenamiento</h3>
+    <ul>
+      <li><strong>Un ejercicio por página</strong>: desliza para cambiar de ejercicio; la última página es el resumen. Arriba: ejercicio x de y, duración del entrenamiento y (con banda pectoral) tu pulso.</li>
+      <li><strong>Lista de series:</strong> hechas, «ahora» (naranja) y pendientes. Toca una serie para seleccionarla.</li>
+      <li><strong>Valores:</strong> cambia peso y repeticiones con <kbd>−</kbd>/<kbd>+</kbd> o toca el número grande para escribirlo (valen la coma y el punto). Los valores de la última vez ya están rellenados.</li>
+      <li><strong>«Serie n hecha»</strong> marca la serie, inicia el descanso y pasa automáticamente al siguiente ejercicio (en una superserie, al ejercicio compañero).</li>
+      <li><strong>Añadir serie</strong> para una serie extra. Las series que no hiciste se quedan vacías y se descartan al terminar.</li>
+    </ul>
+    <h3>Ayudas en la tarjeta de la serie</h3>
+    <ul>
+      <li>Toca la <strong>miniatura</strong> del ejercicio: animación y ejecución sin salir del entrenamiento.</li>
+      <li><strong>Ajuste de la máquina</strong> (máquinas, poleas, barra): guarda p. ej. la altura del asiento y la próxima vez estará ahí.</li>
+      <li><strong>Incremento de peso</strong> (p. ej. mancuernas): el salto de <kbd>−</kbd>/<kbd>+</kbd> por material (por defecto 2,5 kg / 5 lb).</li>
+      <li><strong>¿Ocupada? Cambiar</strong> o <strong>Cambiar ejercicio</strong>: elige una alternativa adecuada (solo antes de hacer una serie del ejercicio).</li>
+      <li><strong>Sugerencia de progresión:</strong> si haces todas las repeticiones, la app propone más peso (o menos asistencia, una banda más fuerte, el siguiente nivel). Solo se aplica con «Aplicar».</li>
+      <li><strong>¡Nuevo récord!</strong> aparece justo después de marcar una serie cuando superas una marca anterior.</li>
+    </ul>
+    <h3>Menú ⋮</h3>
+    <p>Añadir ejercicio, elegir gimnasio <span class="tag">PREMIUM</span>, mostrar tarjeta <span class="tag">PREMIUM</span>, temporizador de descanso sí/no, quitar ejercicio, descartar entrenamiento.</p>
+    <h3>Cardio y ejercicios de aguante</h3>
+    <p>Los ejercicios de cardio no tienen series: tiempo y distancia (pisos en la escaladora), nivel en las máquinas y luego «Hecho». Los ejercicios de aguante (p. ej. plancha) registran segundos.</p>
+    <h3>Peso corporal y asistencia</h3>
+    <p>En los ejercicios con peso corporal introduces el peso añadido; en los asistidos (p. ej. dominadas asistidas), la asistencia: la app calcula con tu peso corporal del perfil. Si falta, lo pregunta una vez en la primera serie.</p>
+    <h3>Terminar</h3>
+    <p>«Terminar» en la página de resumen, o <kbd>✕</kbd> / el botón atrás: la app pregunta «Terminar / Descartar / Seguir entrenando». Sin ninguna serie hecha no se guarda nada.</p>
+  </section>
+
+  <section class="part" id="rest">
+    <h2><span class="no">07</span>Descanso y pantalla de bloqueo</h2>
+    <ul>
+      <li>Después de cada serie corre abajo la <strong>cuenta atrás del descanso</strong> con «A continuación», <kbd>−15 s</kbd>, <kbd>+15 s</kbd> y «Saltar». Su duración viene del plan (descanso entre series o antes del siguiente ejercicio).</li>
+      <li>El temporizador sigue corriendo si bloqueas el móvil o cambias de app; una notificación muestra la cuenta atrás y al final suena la <strong>señal de descanso</strong>.</li>
+      <li>Elige la <strong>señal de descanso</strong> en tu perfil: pitidos, gong, campana, silbato, campana de boxeo, suave, sonido del sistema o ninguno, con escucha previa. La vibración tiene su propio interruptor.</li>
+      <li><strong>Desactivar el temporizador:</strong> por plan en el editor, para entrenamientos libres en el perfil y durante un entrenamiento con <kbd>⋮</kbd>.</li>
+      <li><strong>Descanso según el pulso</strong>: con banda pectoral, el descanso termina en cuanto tu pulso baja a tu umbral (como pronto a los 30 s, como muy tarde con el temporizador).</li>
+    </ul>
+    <h3>Pantalla de bloqueo</h3>
+    <p>Durante un entrenamiento ImberGym aparece sobre la pantalla de bloqueo: logo y un reloj grande (descanso o tiempo de entrenamiento). A los 2 minutos se oscurece y un toque la ilumina; «Toca para desbloquear» te devuelve al entrenamiento. La pantalla se queda encendida durante el entrenamiento.</p>
+  </section>
+
+  <section class="part" id="interval">
+    <h2><span class="no">08</span>Entrenamiento por intervalos <span class="tag">PREMIUM</span></h2>
+    <figure class="shot"><img src="../assets/screens/es_interval.png" alt="Entrenamiento por intervalos" width="320" height="677" loading="lazy"><figcaption>Tabata, ronda 2</figcaption></figure>
+    <h3>Inicio rápido</h3>
+    <ol>
+      <li>Resumen → mosaico «Intervalos».</li>
+      <li>Elige una plantilla: Tabata 20/10 × 8, HIIT 40/20 × 8, 30/30 × 10 o EMOM 60 s × 10; todo se puede ajustar: esfuerzo, descanso, rondas, bloques y descanso entre bloques.</li>
+      <li>Añade ejercicios: se alternan en cada ronda.</li>
+      <li>«Empezar intervalos».</li>
+    </ol>
+    <h3>Cómo funciona</h3>
+    <p>Tras 10 s de preparación, una cuenta atrás grande muestra el esfuerzo (naranja) y el descanso (gris, con «A continuación» y la figura). Antes del esfuerzo una voz cuenta en inglés «One, two, three – go!» y antes de terminar «Three, two, one – stop!» (se puede desactivar en la señal de descanso del perfil; entonces suenan pitidos). Funciona también con el móvil bloqueado. Pausa y termina cuando quieras; los intervalos hechos se guardan. Al final puedes introducir tus repeticiones por ronda.</p>
+    <h3>En un plan</h3>
+    <p>Añade un «Bloque de intervalos (Tabata y más)» en el editor del plan: el bloque se convierte en una página propia del entrenamiento.</p>
+    <h3>Contar con la cámara <span class="tag">EXPERIMENTAL</span></h3>
+    <p>En los ejercicios sin material (sentadilla, sentadilla con salto, sentadilla split, zancada hacia atrás, burpee, variantes de flexiones) y en los abdominales crunch, abdominales completos, crunch inverso, abdominales en V, elevación de piernas y elevación de rodillas tumbado, la cámara puede contar tus repeticiones. En <strong>plancha alta, plancha y plancha lateral</strong> mide cuánto tiempo mantienes la posición correcta: el reloj del intervalo sigue corriendo, el tiempo aguantado solo mientras hombros, cadera y tobillos forman una línea; si no, verás «¡Cadera arriba!» o «¡Cadera abajo!».</p>
+    <ol>
+      <li>En la página del bloque toca «Contar con la cámara (experimental)» y permite la cámara.</li>
+      <li>Coloca el móvil de lado a 2–3 m, p. ej. apoyado en una pared o una botella. Flexiones, abdominales o ejercicios de pie y de suelo mezclados: pon el móvil en el suelo, en vertical o en horizontal, la app lo compensa. Con el móvil en horizontal también giran la preparación, el contador y el resumen: segundos y repeticiones grandes a la izquierda, la animación a la derecha.</li>
+      <li>«Empezar cuando esté listo» y ponte en posición. En cuanto estés quieto 2 segundos en la imagen, el bloque empieza solo (como muy tarde a los 20 segundos).</li>
+    </ol>
+    <p>Durante el esfuerzo se muestran segundos y repeticiones uno al lado del otro y debajo «perfectas» (recorrido completo) y «normales» (no del todo completas). Las repeticiones demasiado cortas no cuentan. Al final, el resumen muestra las repeticiones por ejercicio y ronda, tu porcentaje de técnica y un consejo; los números ya están rellenados y se pueden cambiar.</p>
+    <div class="box"><p>La imagen de la cámara solo se analiza en tu móvil y nunca se guarda. La detección se queda contigo aunque alguien entrene detrás de ti en el gimnasio. La función aún está en pruebas: revisa los números al final.</p></div>
+    <h3>Reto</h3>
+    <p>Resumen → mosaico «Reto» (gratis): «¿Cuántas flexiones puedo hacer?»: la cámara cuenta. Tres tipos: <strong>Máx. repeticiones</strong> (termina solo cuando pasan 6 segundos sin repetición), <strong>Contrarreloj</strong> (tantas como puedas en el tiempo que elijas en minutos, p. ej. 0,5, 1 o 30) y <strong>Aguantar</strong> (plancha, etc.; termina cuando pierdes la posición durante 2 segundos). Elige un ejercicio, colócate como arriba y tras «3 – 2 – 1 – ¡Ya!» empieza. Al final ves tu resultado con «perfectas», tu mejor marca anterior y, si toca, «¡Nuevo récord!». El reto se guarda automáticamente (aparece en tu historial y cuenta para tus récords; bórralo allí si quieres). <strong>Compartir</strong> envía tu resultado como tarjeta con ejercicio, marca y, si lo has conseguido, «¡Nuevo récord!».</p>
+  </section>
+
+  <section class="part" id="coach">
+    <h2><span class="no">09</span>Recomendación y coach de estancamiento</h2>
+    <h3>Recomendado hoy</h3>
+    <p>En planes con varias sesiones: si la siguiente sesión del plan está bien recuperada (al menos un 85 %), se recomienda esa; si no, la mejor recuperada. La tarjeta muestra la recuperación de los grupos musculares principales y un aviso como «Piernas solo 27 % recuperado». <kbd>ⓘ</kbd> explica la regla. Se puede desactivar en el perfil.</p>
+    <h3>Coach de estancamiento <span class="tag">PREMIUM</span></h3>
+    <p>Si un ejercicio no ha mejorado en 4 entrenamientos (o 3 entrenamientos en 3 semanas), aparece antes de la primera serie un aviso amarillo con una sugerencia, p. ej. «hoy más ligero (70 kg × 8) y luego vuelve a apretar».</p>
+    <ul>
+      <li><strong>Aplicar</strong> introduce el peso más ligero (−10 %) en las series pendientes.</li>
+      <li><strong>Más</strong> muestra la evolución y opciones: descarga, otro rango de repeticiones, una variante, más descanso.</li>
+      <li><strong>Ocultar 2 semanas</strong> si quieres seguir así a propósito.</li>
+    </ul>
+    <p>El cardio y los ejercicios de aguante nunca reciben aviso de estancamiento. Se puede desactivar en el perfil.</p>
+  </section>
+
+  <!-- 10 -->
+  <section class="part" id="watch">
+    <h2><span class="no">10</span>Reloj (Wear OS) <span class="tag">PREMIUM</span></h2>
+    <figure class="shot"><img src="../assets/screens/es_watch_set.png" alt="Serie en el reloj" width="454" height="454" loading="lazy"><figcaption>Serie en el reloj</figcaption></figure>
+    <p>Con un reloj Wear OS (p. ej. Samsung Galaxy Watch 4 y posteriores, Google Pixel Watch, OnePlus Watch, TicWatch) controlas tu entrenamiento desde la muñeca: el móvil se puede quedar en el bolsillo. Todos los datos se quedan en el móvil; el reloj solo los muestra y envía lo que introduces.</p>
+    <h3>Instalar</h3>
+    <ol>
+      <li>ImberGym tiene que estar instalado en tu móvil.</li>
+      <li>Lo más fácil: Perfil → <strong>«Conectar reloj»</strong> → «Instalar en el reloj»: la Play Store se abre directamente en tu reloj. La página muestra también si ImberGym ya está instalado allí. También puedes buscar ImberGym en la Play Store del reloj.</li>
+      <li>La primera vez que lo abras en el reloj, permite las notificaciones y el pulso.</li>
+    </ol>
+    <h3>Empezar un entrenamiento</h3>
+    <p>El reloj muestra todos los planes con sus sesiones, la siguiente en naranja. Toca para empezar el entrenamiento en el móvil y en el reloj. Si ya hay un entrenamiento en curso, el reloj muestra al instante la serie actual.</p>
+    <h3>Serie</h3>
+    <ul>
+      <li>Ejercicio, «Serie 2 de 3» y tus valores de la última vez.</li>
+      <li><strong>Toca un valor</strong> → cámbialo con <kbd>−</kbd>/<kbd>+</kbd> (el peso con tu incremento de peso). <strong>Toca el número</strong> → escribe cualquier valor, p. ej. 82,5.</li>
+      <li>Con corona o bisel giratorio, al girar cambian directamente las repeticiones.</li>
+      <li>«Serie hecha» marca la serie, también en tu móvil.</li>
+    </ul>
+    <figure class="shot"><img src="../assets/screens/es_watch_interval.png" alt="Intervalos en el reloj" width="454" height="454" loading="lazy"><figcaption>Tabata en el reloj</figcaption></figure>
+    <h3>Descanso</h3>
+    <p>Cuenta atrás con un anillo; <kbd>+15</kbd> añade tiempo, <kbd>▶</kbd> lo salta. El reloj cuenta por su cuenta y vibra al terminar el descanso, aunque la app no esté abierta o la pantalla esté apagada. Mientras tanto, en la esfera aparece un icono de ImberGym con el tiempo restante.</p>
+    <h3>Entrenamiento por intervalos</h3>
+    <p>En la página de un bloque de intervalos el reloj muestra el tipo, los tiempos y los ejercicios con «Empezar intervalos». Después: esfuerzo en naranja, descanso oscuro con «A continuación»; vibración en cada cambio. <kbd>⏸</kbd> pausa; luego <kbd>▶</kbd> reanuda o <kbd>✕</kbd> termina. Las repeticiones por ronda las introduces después en el móvil.</p>
+    <h3>Pulso</h3>
+    <p>Durante el entrenamiento el reloj mide tu pulso y lo envía al móvil, igual que una banda pectoral (indicador ❤, zonas de pulso, detalles del entrenamiento). Si hay una banda pectoral conectada, tiene prioridad.</p>
+    <h3>Mosaico</h3>
+    <p>Añade el mosaico «ImberGym» a los mosaicos de tu reloj: muestra la siguiente sesión con «Empezar» o, durante un entrenamiento, el ejercicio actual.</p>
+    <div class="box"><p><strong>Relojes antiguos:</strong> los relojes Tizen (p. ej. Gear S3) no son compatibles. Garmin, Amazfit y otros a menudo pueden transmitir el pulso como una banda pectoral (véase <a href="#heart">Pulso</a>).</p></div>
+  </section>
+
+  <section class="part" id="outdoor">
+    <h2><span class="no">11</span>Aire libre y Trackshow <span class="tag">PREMIUM</span></h2>
+    <figure class="shot"><img src="../assets/screens/es_trackshow.png" alt="Trackshow" width="320" height="677" loading="lazy"><figcaption>Trackshow</figcaption></figure>
+    <h3>Grabar</h3>
+    <ol>
+      <li>Resumen → «Aire libre con GPS» → elige la actividad (correr, bici, senderismo…).</li>
+      <li>Permite la ubicación «mientras se usa la app». Empieza a grabar: la pantalla puede estar apagada; una notificación muestra «ImberGym está grabando».</li>
+      <li>Pausa y reanuda cuando quieras. Al correr y en bici la app <strong>se pausa automáticamente</strong> tras 10 s parado y sigue con tu primer paso (no en senderismo: la parada forma parte de la ruta). Tras una pausa manual también se reanuda sola en cuanto sigues.</li>
+      <li>«Terminar» guarda la ruta como entrenamiento con distancia, tiempo, velocidad o ritmo y desnivel (del barómetro).</li>
+    </ol>
+    <h3>Trackshow</h3>
+    <p>Al terminar, la Trackshow reproduce tu ruta sobre curvas de nivel, con vuelo de cámara y momentos destacados (tramo más empinado, punto más alto, kilómetro más rápido, récord), tarjeta de resultado y perfil de altitud. «Reproducir otra vez» la repite; toca el nombre del lugar para cambiarlo.</p>
+    <p><strong>Compartir</strong> como imagen de historia (9:16) o como <strong>vídeo</strong> con vuelo de cámara. En los detalles del entrenamiento también hay una <strong>exportación GPX</strong> para otras apps.</p>
+  </section>
+
+  <section class="part" id="history">
+    <h2><span class="no">12</span>Historial y estadísticas</h2>
+    <figure class="shot"><img src="../assets/screens/es_stats.png" alt="Estadísticas" width="320" height="677" loading="lazy"><figcaption>Estadísticas</figcaption></figure>
+    <h3>Estadísticas</h3>
+    <ul>
+      <li>Periodo <strong>semana / mes / 3 meses</strong> (hasta hoy) comparado con el periodo anterior: entrenamientos, tiempo de entreno, volumen.</li>
+      <li><strong>Lo que has entrenado</strong> <span class="tag">PREMIUM</span>: mapa corporal de frente y de espaldas; cuantas más series, más intenso el color; toca para ver el número. Cambia a <strong>Recuperación</strong>: lo recuperado que está cada músculo (estimación).</li>
+      <li><strong>Distribución</strong> por grupos musculares como anillo.</li>
+      <li><strong>Récords</strong>: los más recientes; «Ver todos» abre la lista. Toca un récord para ver la evolución del ejercicio.</li>
+      <li><strong>Mostrar peso y grasa corporal</strong> y el <strong>resumen semanal y anual</strong> como tarjeta para compartir.</li>
+    </ul>
+    <h3>Entrenamientos</h3>
+    <figure class="shot"><img src="../assets/screens/es_history.png" alt="Historial" width="320" height="677" loading="lazy"><figcaption>Historial con filtros</figcaption></figure>
+    <p>Todos los entrenamientos por año y mes con totales. Filtra por <strong>plan</strong> (incluidos los «Entrenamientos libres») y por <strong>ejercicio</strong>, combinables.</p>
+    <h3>Detalles del entrenamiento</h3>
+    <ul>
+      <li>Todos los ejercicios y series, trofeos por récords, gimnasio o lugar.</li>
+      <li><strong>Editar:</strong> toca una serie para cambiarla, añade o borra series, ajusta fecha, hora de inicio y duración, borra el entrenamiento.</li>
+      <li><strong>Pulso</strong> (media, máximo, curva): de la banda pectoral o con «Cargar pulso del reloj».</li>
+      <li><strong>Compartir entrenamiento</strong> como tarjeta con músculos, ejercicios y nuevos récords; en rutas GPS, la Trackshow y el GPX.</li>
+    </ul>
+    <h3>Récords</h3>
+    <p>Por ejercicio: peso máximo, 1RM estimado, volumen, más repeticiones, aguante más largo; en cardio, distancia más larga, ritmo o velocidad más rápidos, duración más larga. Un récord solo cuenta si supera una marca anterior.</p>
+  </section>
+
+  <section class="part" id="nutrition">
+    <h2><span class="no">13</span>Nutrición</h2>
+    <figure class="shot"><img src="../assets/screens/es_nutrition.png" alt="Nutrición" width="320" height="677" loading="lazy"><figcaption>Día con anillo de calorías</figcaption></figure>
+    <h3>El día</h3>
+    <p>Con ‹ › cambias de día. El anillo muestra lo comido frente al objetivo y lo que «queda»; debajo, proteína, carbohidratos y grasa. Cuatro comidas: desayuno, comida, cena y tentempiés.</p>
+    <h3>Registrar alimentos</h3>
+    <figure class="shot"><img src="../assets/screens/es_food.png" alt="Alimentos" width="320" height="677" loading="lazy"><figcaption>Mosaicos de alimentos</figcaption></figure>
+    <ul>
+      <li><kbd>+</kbd> en una comida abre los mosaicos: primero lo que comes a menudo en esa comida y, si no, sugerencias típicas.</li>
+      <li><strong>Tocar</strong> registra una ración al instante (la cantidad aparece bajo el nombre), con «Deshacer». El pequeño <kbd>−</kbd> del mosaico quita una ración.</li>
+      <li><strong>Mantener pulsado</strong> abre la cantidad en gramos, mililitros o raciones (también ½) con la tabla nutricional.</li>
+      <li><strong>Buscar:</strong> más de 1.200 alimentos y platos cotidianos, sin conexión.</li>
+      <li><strong>Código de barras:</strong> escanea un producto: primero se busca en el móvil y, si no, en Open Food Facts. Revisa los valores y guarda: la próxima vez estará ahí al instante.</li>
+      <li>Crea un <strong>alimento propio</strong> (valores por 100 g o 100 ml, interruptor «Líquido») o usa <strong>Añadir rápido</strong> (solo calorías).</li>
+      <li><strong>De recetas</strong>: una receta directamente en esta comida.</li>
+      <li>Toca una entrada para cambiar la cantidad o quitarla.</li>
+    </ul>
+    <h3>Objetivos</h3>
+    <p>«Ajustar objetivos» (o toca el anillo): elige tu objetivo, objetivo de calorías automático (según altura, peso, edad y actividad) o propio, macros individuales y un <strong>objetivo para días de descanso</strong>. <strong>Objetivo de calorías dinámico</strong> <span class="tag">PREMIUM</span>: suma una parte de tu actividad medida desde Health Connect (deslizador 0–100 %).</p>
+    <p>¿No te interesan las calorías? Perfil → desactiva la nutrición; la pestaña desaparece.</p>
+  </section>
+
+  <section class="part" id="recipes">
+    <h2><span class="no">14</span>Recetas</h2>
+    <p>Nutrición → «Descubrir recetas» o la biblioteca: 40 recetas propias con filtros (comida, alto en proteína, vegetariana). Una receta muestra calorías y macros por ración, ingredientes con <strong>calculadora de raciones</strong> (−/+, ½, ¼, ¾), pasos y un consejo. «Añadir 1 ración al diario» la registra. 6 recetas básicas son gratis; todas las demás y <strong>tus propias recetas</strong> (ingredientes desde la búsqueda de alimentos, foto propia) son Premium <span class="tag">PREMIUM</span>.</p>
+  </section>
+
+  <section class="part" id="body">
+    <h2><span class="no">15</span>Peso, grasa corporal y fotos de progreso</h2>
+    <h3>Peso y grasa corporal</h3>
+    <ul>
+      <li>Perfil → «Peso y grasa corporal» → añade una entrada. Grasa corporal como valor o <strong>estimada por medidas</strong> (cuello, cintura y, si hace falta, cadera; necesita la altura en el perfil).</li>
+      <li>La tarjeta «Actual» muestra la media de 7 días y la variación. Gráficos <span class="tag">PREMIUM</span> de 1 mes, 3 meses, 1 año o todo.</li>
+      <li>Las entradas se agrupan por meses; toca para editarlas o borrarlas.</li>
+      <li><strong>Importar desde Health Connect</strong> (p. ej. una báscula Withings): activa el interruptor y da permiso; las mediciones nuevas llegan solas; desliza hacia abajo para actualizar al momento.</li>
+      <li>El peso de tu perfil sigue siempre a la entrada más reciente.</li>
+    </ul>
+    <h3>Fotos de progreso <span class="tag">PREMIUM</span></h3>
+    <p>Perfil → «Fotos de progreso»: elige la vista (de frente, de lado, de espaldas); «Cámara» muestra tu última foto semitransparente como <strong>superposición</strong> (misma pose y distancia), con temporizador. Compara antes/después con un deslizador o un fundido. Las fotos se quedan en la app, ni en la galería ni en la copia de seguridad de Android; «Compartir / guardar», «Exportar todas las fotos» y «Compartir comparación» las sacan solo cuando tú quieres.</p>
+  </section>
+
+  <section class="part" id="heart">
+    <h2><span class="no">16</span>Pulso y Health Connect</h2>
+    <h3>Pulso de tu reloj</h3>
+    <p>Si tu reloj escribe en Health Connect (p. ej. Samsung, Google, Garmin vía Health Connect): en los detalles del entrenamiento toca «Cargar pulso del reloj»; da permiso una vez y después ImberGym obtiene automáticamente el pulso de los entrenamientos recientes. Consejo: inicia también un entrenamiento en el reloj; si no, solo mide cada pocos minutos.</p>
+    <div class="box"><p><strong>Relojes Huawei:</strong> Huawei Health no escribe en Health Connect. La app «Health Sync» transfiere el pulso; después funciona como arriba.</p></div>
+    <h3>Banda pectoral y zonas de pulso</h3>
+    <figure class="shot"><img src="../assets/screens/es_strap.png" alt="Banda pectoral" width="320" height="677" loading="lazy"><figcaption>Banda pectoral y zonas</figcaption></figure>
+    <ol>
+      <li>Perfil → «Banda pectoral y zonas» → ponte la banda, «Buscar banda», vincúlala (permite «Dispositivos cercanos»).</li>
+      <li>Durante un entrenamiento se conecta sola; tu pulso aparece arriba con el color de su zona.</li>
+      <li>Fija tu pulso máximo (si no, 220 − edad); de ahí salen cinco zonas.</li>
+      <li>Opcionalmente, <strong>descanso según el pulso</strong> con tu propio umbral (véase <a href="#rest">Descanso</a>).</li>
+    </ol>
+    <p>Muchos relojes pueden transmitir el pulso como una banda (p. ej. Garmin «Transmitir frecuencia cardiaca», relojes Huawei recientes «Compartir frecuencia cardiaca», Polar, Coros, Suunto): vincúlalos igual que una banda.</p>
+  </section>
+
+  <section class="part" id="supplements">
+    <h2><span class="no">17</span>Suplementos</h2>
+    <p>Perfil → «Suplementos»: añade tus propios productos (nombre, forma, unidad como mg, UI, unidad, gotas…, cantidad habitual y, opcionalmente, principio activo por unidad). Toca «Tomado» cada día (mantener pulsado = otra cantidad, ↶ = deshacer, también para días pasados). Los <strong>recordatorios</strong> tienen hora y días de la semana (diario, de lunes a viernes o a tu gusto). El calendario mensual muestra qué días lo tomaste todo. ImberGym no sugiere a propósito ningún producto ni dosis.</p>
+  </section>
+
+  <section class="part" id="gyms">
+    <h2><span class="no">18</span>Gimnasios y tarjetas de socio <span class="tag">PREMIUM</span></h2>
+    <h3>Mis gimnasios</h3>
+    <p>Perfil → «Mis gimnasios»: crea un gimnasio con un nombre y «Usar la ubicación actual». Cuando empiezas un entrenamiento allí, la app reconoce el gimnasio («Lugar detectado»); si no, elígelo durante el entrenamiento con <kbd>⋮</kbd> → «Elegir lugar». El lugar aparece en el historial, en los detalles y en la entrada del calendario.</p>
+    <h3>Tarjetas de socio</h3>
+    <p>Perfil → «Tarjetas de socio»: escanea el código de barras o QR de la tarjeta con la cámara o introduce número y formato, elige un nombre y un color y asocia un gimnasio. Tócala para mostrarla a pantalla completa con el brillo al máximo, para el lector de la entrada. Acceso rápido con el icono de tarjeta del resumen y durante el entrenamiento con <kbd>⋮</kbd> → «Mostrar tarjeta». Las tarjetas se quedan solo en tu móvil (nunca en una copia de seguridad). Por desgracia, un móvil no puede imitar los chips con transpondedor (RFID/NFC).</p>
+  </section>
+
+  <section class="part" id="calendar">
+    <h2><span class="no">19</span>Calendario</h2>
+    <p>Perfil → «Guardar los entrenamientos en el calendario»: da permiso y elige un calendario; también se pueden añadir los entrenamientos anteriores. Cada entrenamiento terminado se convierte en un evento (título «ImberGym: nombre del plan», inicio y fin, ejercicios y series en la descripción, gimnasio como lugar) y se actualiza al editarlo o se quita al borrarlo. Al desactivarlo, la app pregunta si borrar las entradas existentes. No se crean eventos por adelantado.</p>
+  </section>
+
+  <section class="part" id="profile">
+    <h2><span class="no">20</span>Perfil y ajustes</h2>
+    <ul>
+      <li><strong>Datos personales:</strong> nombre, género, edad, altura, peso, objetivo, actividad.</li>
+      <li><strong>Idioma</strong> y <strong>unidades</strong>: los cambios se aplican al instante.</li>
+      <li><strong>Figura:</strong> figura masculina o femenina en las animaciones y el mapa corporal.</li>
+      <li><strong>Señal de descanso:</strong> sonido con escucha previa, vibración, «Avisos de voz en los intervalos».</li>
+      <li><strong>Temporizador de descanso</strong> predeterminado para entrenamientos libres y planes nuevos.</li>
+      <li><strong>Recomendación diaria</strong> y <strong>coach de estancamiento</strong> sí/no.</li>
+      <li><strong>Nutrición</strong> sí/no.</li>
+      <li>Peso y grasa corporal, fotos de progreso, suplementos, banda pectoral y zonas, mis gimnasios, tarjetas de socio, calendario, datos y copia de seguridad.</li>
+      <li><strong>ImberGym Premium</strong>, <strong>Valorar ImberGym</strong> y <strong>Acerca de ImberGym</strong> (versión, privacidad, contacto, fuentes, licencias).</li>
+    </ul>
+  </section>
+
+  <section class="part" id="data">
+    <h2><span class="no">21</span>Copia de seguridad, importación y exportación</h2>
+    <h3>Copia de seguridad</h3>
+    <p>Perfil → «Datos y copia de seguridad» → crear copia de seguridad: un archivo ZIP con todos los datos (fotos de progreso solo si las incluyes); guárdalo con el menú de compartir, p. ej. en Google Drive o en Archivos. Guárdalo en un lugar seguro; ImberGym no tiene nube.</p>
+    <h3>Restaurar</h3>
+    <p>«Elegir archivo de copia» → revisa la fecha y el número de entrenamientos → «Sustituir». La app se reinicia con los datos de la copia. También se puede hacer en la primera página después de instalarla.</p>
+    <h3>Importar desde otras apps</h3>
+    <p>«Elegir archivo CSV»: se reconocen las exportaciones de <strong>Strong</strong> y <strong>Hevy</strong> (en Strong, elige la unidad de peso). La vista previa muestra entrenamientos, series y nuevos ejercicios propios; los entrenamientos duplicados se omiten.</p>
+    <h3>Exportar</h3>
+    <p>«Exportar entrenamientos (CSV)»: una fila por serie; se abre p. ej. en Excel.</p>
+  </section>
+
+  <section class="part" id="premium">
+    <h2><span class="no">22</span>Gratis y Premium</h2>
+    <p><strong>Gratis:</strong> el entrenamiento completo con todos los ejercicios y animaciones, hasta 5 planes y 5 ejercicios propios, historial, récords, estadísticas, recomendación diaria, contador de calorías con código de barras, 6 recetas, peso, pulso de Health Connect, calendario, copia de seguridad e importación.</p>
+    <p><strong>Premium</strong> desbloquea: planes y ejercicios propios ilimitados, mapa corporal y recuperación, gráficos de peso y grasa corporal, coach de estancamiento, entrenamiento por intervalos, app para el reloj, grabación GPS con Trackshow y vídeo, gimnasios y tarjetas de socio, fotos de progreso, todas las recetas y recetas propias, objetivo de calorías dinámico e importar planes por código QR.</p>
+    <p>Todo es gratis hasta tu primer entrenamiento terminado y después 7 días más para probarlo. Luego: mensual, anual o una compra única de por vida, en Perfil → «ImberGym Premium». «Restaurar compras» recupera una compra en un móvil nuevo. Las suscripciones se cancelan en Google Play.</p>
+  </section>
+
+  <section class="part" id="help">
+    <h2><span class="no">23</span>Ayuda</h2>
+    <ul>
+      <li><strong>¿No suena la señal de descanso?</strong> Permite las notificaciones de ImberGym y revisa el modo «No molestar».</li>
+      <li><strong>¿Falta el pulso en entrenamientos cortos?</strong> Sin un entrenamiento en el reloj solo mide cada pocos minutos: entrena también en el reloj o usa una banda pectoral.</li>
+      <li><strong>¿No se detecta el gimnasio?</strong> Permite la ubicación y guarda una vez la ubicación del gimnasio estando allí.</li>
+    </ul>
+    <p>Preguntas, deseos, errores: <a href="mailto:chr.mathai@gmail.com?subject=ImberGym">chr.mathai@gmail.com</a></p>
+    <p class="top-link"><a href="#top">↑ volver arriba</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap cols">
+    <div>
+      <h4>ImberGym</h4>
+      <ul>
+        <li><a href="./">Inicio</a></li>
+        <li><a href="manual.html">Manual</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="privacy.html">Privacidad</a></li>
+        <li><a href="mailto:chr.mathai@gmail.com?subject=ImberGym">Soporte</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <p style="margin:0">Christoph Imber<br>4742 Pram, Austria<br><a href="mailto:chr.mathai@gmail.com">chr.mathai@gmail.com</a></p>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:24px">© 2026 Christoph Imber · ImberGym</div>
+</footer>
+</body>
+</html>

@@ -8,14 +8,17 @@
   <!-- Ohne Skript: Deutsch. Mit Skript: Sprache des Browsers. -->
   <noscript><meta http-equiv="refresh" content="0; url=de/"></noscript>
   <script>
-    if (!(navigator.language || 'de').toLowerCase().startsWith('de')) {
-      location.replace('en/');
-    } else {
+    var lang = (navigator.language || 'de').toLowerCase();
+    if (lang.startsWith('de')) {
       location.replace('de/');
+    } else if (lang.startsWith('es')) {
+      location.replace('es/');
+    } else {
+      location.replace('en/');
     }
   </script>
 </head>
 <body style="background:#2A2825;color:#EDE8E1;font-family:sans-serif">
-  <p><a href="de/" style="color:#FF7A1A">Deutsch</a> · <a href="en/" style="color:#FF7A1A">English</a></p>
+  <p><a href="de/" style="color:#FF7A1A">Deutsch</a> · <a href="en/" style="color:#FF7A1A">English</a> · <a href="es/" style="color:#FF7A1A">Español</a></p>
 </body>
 </html>
