@@ -78,9 +78,26 @@ header.top .wrap {
 nav.main { display: flex; gap: 18px; margin-left: auto; }
 nav.main a { color: var(--text); text-decoration: none; font-size: 15px; }
 nav.main a:hover { color: var(--signal); }
-.lang { font-size: 14px; color: var(--text-2); }
-.lang a { color: var(--text-2); text-decoration: none; }
-.lang a.on { color: var(--signal); font-weight: 700; }
+/* Sprachauswahl als Dropdown (details/summary, ohne JavaScript) */
+.lang { position: relative; font-size: 14px; color: var(--text-2); }
+.lang summary {
+  display: flex; align-items: center; gap: 6px; cursor: pointer;
+  list-style: none; padding: 6px 10px; border: 2px solid var(--border);
+  border-radius: var(--radius); color: var(--text); font-weight: 700; user-select: none;
+}
+.lang summary::-webkit-details-marker { display: none; }
+.lang summary::after { content: "▾"; color: var(--text-2); font-size: 12px; }
+.lang[open] summary { border-color: var(--signal); }
+.lang ul {
+  position: absolute; right: 0; top: calc(100% + 6px); z-index: 20;
+  list-style: none; margin: 0; padding: 6px 0; min-width: 160px;
+  background: #34302c; border: 2px solid var(--border); border-radius: var(--radius);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  max-height: 70vh; overflow-y: auto;
+}
+.lang li a { display: block; padding: 8px 14px; color: var(--text); text-decoration: none; }
+.lang li a:hover, .lang li a:focus-visible { background: rgba(255, 122, 26, 0.12); color: var(--signal); }
+.lang li a.on { color: var(--signal); font-weight: 700; }
 
 .btn {
   display: inline-block;
