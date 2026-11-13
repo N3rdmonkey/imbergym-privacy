@@ -169,6 +169,7 @@ details p { color: var(--text-2); margin: 10px 0 0; }
 .legal .meta { color: var(--text-2); font-size: 15px; }
 .legal h2 { font-size: 30px; margin: 40px 0 10px; }
 .legal h2 .no { color: var(--signal); margin-right: 8px; }
+.legal h3 { font-size: 22px; margin: 28px 0 8px; }
 .legal p, .legal li { color: #d8d2ca; }
 .legal table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 15px; }
 .legal th, .legal td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
