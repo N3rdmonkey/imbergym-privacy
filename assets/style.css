@@ -405,18 +405,34 @@ footer ul { list-style: none; padding: 0; margin: 0; }
 .plan-note { color: var(--text-2); font-size: 15px; margin: 18px 0 20px; }
 .plan .store { align-self: flex-start; margin-top: auto; }
 
-/* FAQ: Plus statt Dreieck */
-#faq details summary { list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
-#faq details summary::-webkit-details-marker { display: none; }
-#faq details summary::after { content: "+"; flex: none; width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: var(--tile-2); color: var(--signal); font: 700 20px/1 "Chivo"; transition: transform .2s; }
-#faq details[open] summary::after { transform: rotate(45deg); }
+/* FAQ: zweispaltig, Fragen als Liste mit Trennlinien */
+.faq-grid { display: grid; grid-template-columns: 340px 1fr; gap: 64px; align-items: start; }
+.faq-side { position: sticky; top: 100px; }
+.faq-side p { color: var(--text-2); font-size: 18px; margin: 0 0 24px; }
+.faq-mail { display: inline-flex; align-items: center; gap: 10px; }
+.faq-mail:hover { border-color: var(--signal); color: var(--signal); }
+.faq-list { border-top: 1px solid var(--line); }
+.faq-list details { background: none; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; padding: 0; margin: 0; }
+.faq-list details[open] { border-color: var(--line); }
+.faq-list summary { list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 20px;
+  padding: 22px 0; font: 800 23px/1.15 "Big Shoulders", sans-serif; letter-spacing: .01em; transition: color .15s; }
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary:hover { color: var(--signal); }
+.faq-list summary::after { content: "+"; flex: none; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center;
+  border: 1px solid var(--border); color: var(--signal); font: 400 22px/1 "Chivo", sans-serif; transition: transform .2s, background .2s; }
+.faq-list details[open] summary::after { transform: rotate(45deg); background: var(--signal); color: var(--on-signal); border-color: var(--signal); }
+.faq-list details p { margin: -6px 48px 24px 0; font-size: 16px; }
 
 @media (max-width: 960px) {
   .cols4 { grid-template-columns: repeat(2, 1fr); }
+  .faq-grid { grid-template-columns: 1fr; gap: 24px; }
+  .faq-side { position: static; }
   .outdoor { grid-template-columns: 1fr; }
   .outdoor-shot img { width: 240px; }
 }
 @media (max-width: 560px) {
   .cols4 { grid-template-columns: 1fr; gap: 18px; }
   .plan { padding: 22px; }
+  .faq-list summary { font-size: 20px; padding: 18px 0; }
+  .faq-list details p { margin-right: 0; }
 }
