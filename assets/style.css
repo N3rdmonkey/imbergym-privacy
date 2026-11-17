@@ -366,3 +366,57 @@ footer ul { list-style: none; padding: 0; margin: 0; }
   .band span { font-size: 24px; }
   .manual figure.shot { float: none; width: 220px; margin: 10px auto; }
 }
+
+/* Funktionen nach Themen (Website 2.1) */
+.cols4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
+.g h4 { font: 700 13px "Chivo", sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--signal); margin: 0 0 6px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+.it { display: flex; gap: 14px; padding: 12px 0; }
+.it .ic { flex: none; width: 42px; height: 42px; border-radius: 12px; display: grid; place-items: center; background: rgba(255, 122, 26, .12); color: var(--signal); }
+.it b { display: block; font-size: 16px; line-height: 1.35; }
+.it span { color: var(--text-2); font-size: 14px; line-height: 1.45; }
+.more-link { display: inline-block; margin-top: 28px; color: var(--text); font-weight: 700; text-decoration: none; border-bottom: 2px solid var(--signal); }
+.more-link:hover { color: var(--signal); }
+
+/* Draußen unterwegs: Symbole + Handy */
+.outdoor { display: grid; grid-template-columns: 1fr 360px; gap: 56px; align-items: center; }
+.outdoor .rows { display: flex; flex-direction: column; gap: 6px; margin-top: 10px; }
+.outdoor .it { padding: 16px 0; border-bottom: 1px solid var(--line); }
+.outdoor .it:last-child { border-bottom: 0; }
+.outdoor .it b { font: 800 26px/1.05 "Big Shoulders", sans-serif; margin-bottom: 6px; }
+.outdoor .it span { font-size: 16px; }
+.outdoor .it .ic { width: 48px; height: 48px; }
+.outdoor-shot { position: relative; display: grid; place-items: center; }
+.outdoor-shot::before { content: ""; position: absolute; width: 460px; height: 460px; border-radius: 50%; background: radial-gradient(circle, rgba(255, 122, 26, .28), transparent 65%); }
+.outdoor-shot img { position: relative; width: 300px; height: auto; transform: rotate(4deg); filter: drop-shadow(0 30px 50px rgba(0, 0, 0, .55)); }
+
+/* Gratis & Premium */
+.plan { padding: 30px; display: flex; flex-direction: column; }
+.plan h3 { font-size: 34px; margin-bottom: 14px; }
+.plan ul { list-style: none; padding: 0; margin: 0; color: var(--text); }
+.plan li { position: relative; padding: 7px 0 7px 32px; border-bottom: 1px solid var(--line); font-size: 16px; }
+.plan li:last-child { border-bottom: 0; }
+.plan li::before {
+  content: ""; position: absolute; left: 0; top: 10px; width: 20px; height: 20px; border-radius: 50%;
+  background: rgba(255, 122, 26, .15) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ff7a1a' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center/13px no-repeat;
+}
+.plan.premium { border: 1px solid rgba(255, 122, 26, .6); box-shadow: 0 0 0 1px rgba(255, 122, 26, .15), 0 30px 60px rgba(255, 122, 26, .08); }
+.plan.premium h3 { color: var(--signal); }
+.plan.premium li::before { background-color: var(--signal); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231e1c19' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E"); }
+.plan-note { color: var(--text-2); font-size: 15px; margin: 18px 0 20px; }
+.plan .store { align-self: flex-start; margin-top: auto; }
+
+/* FAQ: Plus statt Dreieck */
+#faq details summary { list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+#faq details summary::-webkit-details-marker { display: none; }
+#faq details summary::after { content: "+"; flex: none; width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: var(--tile-2); color: var(--signal); font: 700 20px/1 "Chivo"; transition: transform .2s; }
+#faq details[open] summary::after { transform: rotate(45deg); }
+
+@media (max-width: 960px) {
+  .cols4 { grid-template-columns: repeat(2, 1fr); }
+  .outdoor { grid-template-columns: 1fr; }
+  .outdoor-shot img { width: 240px; }
+}
+@media (max-width: 560px) {
+  .cols4 { grid-template-columns: 1fr; gap: 18px; }
+  .plan { padding: 22px; }
+}
