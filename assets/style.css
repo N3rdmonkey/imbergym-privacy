@@ -124,14 +124,16 @@ section { padding: 96px 0; }
 .section-head p { color: var(--text-2); max-width: 400px; margin: 0; }
 
 /* Hero */
-.hero { position: relative; padding: 80px 0 48px; overflow: hidden; }
+.hero { position: relative; padding: 120px 0 48px; overflow: hidden; }
+/* Kreide-Foto (wie Store-Grafik): Hände rechts, Schrift links auf dunklem Verlauf */
 .hero::before {
-  content: ""; position: absolute; right: -180px; top: 20px;
-  width: 760px; height: 760px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 122, 26, 0.32), rgba(255, 122, 26, 0) 65%);
-  pointer-events: none;
+  content: ""; position: absolute; inset: 0 0 auto 0; height: 760px; pointer-events: none;
+  background:
+    linear-gradient(90deg, #1e1c19 0%, rgba(30, 28, 25, .88) 30%, rgba(30, 28, 25, .35) 58%, rgba(30, 28, 25, 0) 75%),
+    linear-gradient(180deg, rgba(30, 28, 25, 0) 55%, #1e1c19 100%),
+    url("hero_chalk.jpg") right top / auto 100% no-repeat;
 }
-.hero-grid { position: relative; display: grid; grid-template-columns: 1.1fr 1fr; gap: 24px; align-items: center; }
+.hero-grid { position: relative; display: grid; grid-template-columns: minmax(0, 640px); min-height: 520px; align-items: center; }
 .hero h1 { margin: 22px 0 22px; }
 .hero h1 em { font-style: normal; color: var(--signal); }
 .hero p.lead { font-size: 20px; color: var(--text-2); max-width: 560px; margin: 0 0 32px; }
@@ -335,7 +337,10 @@ footer ul { list-style: none; padding: 0; margin: 0; }
 
 /* Handy & Tablet */
 @media (max-width: 960px) {
-  .hero-grid { grid-template-columns: 1fr; }
+  .hero-grid { grid-template-columns: 1fr; min-height: 0; }
+  .hero::before { height: 560px; background:
+    linear-gradient(180deg, rgba(30, 28, 25, .55) 0%, rgba(30, 28, 25, .8) 55%, #1e1c19 100%),
+    url("hero_chalk_s.jpg") 72% top / auto 100% no-repeat; }
   .phones { height: 520px; max-width: 470px; margin: 0 auto; width: 100%; }
   .phones img { width: 230px; }
   .phones .p1 { left: 0; }
